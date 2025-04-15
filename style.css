@@ -17,7 +17,7 @@ h5{
      color: black;
  }
 
-/* subscribe, sign-in and email-icon button styles */
+/* SUBSCRIBE, SIGN-IN AND EMAIL ICON BUTTON CSS */
 .btn-primary{
     background-color: black;
     border-color: transparent;
@@ -63,6 +63,13 @@ a, .btn-link{
 .nav-color{
     background-color: #a9091f !important;
 }
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    transition: all 0.2s ease-in-out;
+    margin-top: 0;
+}
 .dropdown-item:hover{
     background-color: #a9091f;
     border-color: #a9091f;
@@ -106,3 +113,71 @@ a, .btn-link{
     width: 300px;
 }
 
+.btn-canvas-account {
+    padding: 0.75rem 1rem;
+    border: 1px solid #777;
+    background-color: transparent;
+    color: white;
+    transition: border-color 0.3s ease;
+    font-weight: bold;
+    font-size: 16px;
+}
+.btn-canvas-account:hover {
+    border-color: white;
+}
+
+.text-account {
+    color: white;
+    border-bottom: 1px solid #777;
+    padding: 0.75rem 0;
+    display: block;
+    transition: border-color 0.3s ease;
+}
+.text-account:hover {
+    border-bottom-color: white;
+}
+
+/* SEARCH BAR CSS */
+.btn-close{
+    color: white; !important;
+    background-color: transparent; !important; /*TODO: figure out why this is not applied on close button*/
+    border: none; !important;
+}
+
+.form-control,
+.input-group-text {
+    border-radius: 30px;
+}
+.form-control {
+    padding-right: 30px;
+    border-right: 0;
+}
+.form-control:focus,
+.input-group-text:focus,
+.form-control:active,
+.input-group-text:active {
+    box-shadow: none;
+    border-color: transparent;
+}
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.search-icon-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.search-icon-btn i {
+    font-size: 18px;
+    color: black;
+}
+.search-icon-btn:hover i {
+    color: #a9091f;
+}
