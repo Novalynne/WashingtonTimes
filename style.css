@@ -17,7 +17,7 @@ h5{
      color: black;
  }
 
-/* subscribe and sign in button styles */
+/* subscribe, sign-in and email-icon button styles */
 .btn-primary{
     background-color: black;
     border-color: transparent;
@@ -47,7 +47,6 @@ a, .btn-link{
     color: red;
 }
 
-
 #emailIcon{
     font-size: 36px;
     color: gray;
@@ -58,4 +57,20 @@ a, .btn-link{
     width: 50px;
     position: relative;
     bottom: -8px;
+}
+
+/* NAVIGATIONAL BAR CSS */
+.nav-color{
+    background-color: #a9091f !important;
+}
+.dropdown-item:hover{
+    background-color: #a9091f;
+    border-color: #a9091f;
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover, .nav-link:focus, .nav-link:active{
+    color: white;
 }

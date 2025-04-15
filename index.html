@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
 <!-- Main Header -->
 <div class="d-none d-md-block">
     <div class="row align-items-center">
-        <div class="col-md-4  offset-md-4"> <!-- Logo Zone -->
+        <div class="col-md-4 offset-md-4"> <!-- Logo Zone -->
             <div class="logo">
                 <a href="#">
                     <img src="https://placehold.co/500x80?font=playfair-display&text=THE+WASHINGTON+TIMES" class="img-fluid" alt="Main Logo">
@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="col-md-4 text-end"> <!-- Subscribe Zone -->
-            <button type="button" class="Icon" data-bs-toggle="modal" data-bs-target="#exampleModal"><!-- TODO: Button trigger modal -->
+            <button type="button" class="Icon" data-bs-toggle="modal" data-bs-target="#exampleModal"><!-- TODO: (if i want) Button trigger modal -->
                 <i class="fa fa-envelope" id="emailIcon"></i>
             </button>
             <button type="button" class="btn btn-primary">Subscribe</button>
@@ -31,8 +31,96 @@
     </div>
 </div>
 <!-- Navigational Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-md nav-color sticky-top">
+    <div class="container-fluid">
+        <!-- Hamburger button for small devices -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"> <i class="fa fa-bars" style="  font-size:24px; color: white"></i> </span>
+        </button>
 
+        <!-- WashingTon Logo -->
+        <span class="navbar-brand mx-auto d-md-none text-white">The Washington Times</span>
+
+        <!-- Account Icon -->
+        <button class="btn d-flex d-md-none" type="button" id="closeButtonRight" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <i class="fa fa-user-circle-o" style="font-size:36px; color: white"></i>
+        </button>
+
+        <!-- Beginning of navigational bar for big screens -->
+        <div class="collapse navbar-collapse">
+            <div class="container d-flex justify-content-center">
+                <ul class="navbar-nav d-flex flex-row gap-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">News</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Policy</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Commentary</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Sports</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Sponsored</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Events</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Video/Podcast</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Games</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                            <li><a class="dropdown-item" href="#">Stuff</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Beginning of navigational bar for small screens -->
+
+    </div>
 </nav>
 </body>
 </html>
