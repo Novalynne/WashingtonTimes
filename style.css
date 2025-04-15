@@ -74,3 +74,35 @@ a, .btn-link{
 .nav-link:hover, .nav-link:focus, .nav-link:active{
     color: white;
 }
+.fa-user-circle-o{
+    color: white;
+    font-size: 36px; /*TODO: figure out why this is not applied on Font Awesom Icon*/
+}
+.fa-bars{
+    color: white;
+    font-size: 24px;
+}
+
+/* OFF CANVAS LEFT AND RIGHT CSS */
+.offcanvas-body{
+    background: #a9091f !important;
+    color: white;
+    margin-left: 20px;
+    border-bottom: 1px solid white;
+}
+.offcanvas{
+    background: #a9091f !important;
+}
+.btn-canvas{
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+#offcanvasRight{
+    width: 250px;
+}
+#offcanvasLeft{
+    width: 300px;
+}
+

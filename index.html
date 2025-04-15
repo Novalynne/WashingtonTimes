@@ -34,20 +34,19 @@
 <nav class="navbar navbar-expand-md nav-color sticky-top">
     <div class="container-fluid">
         <!-- Hamburger button for small devices -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"> <i class="fa fa-bars" style="  font-size:24px; color: white"></i> </span>
+        <button class="btn d-flex d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
+            <i class="fa fa-bars"></i>
         </button>
 
         <!-- WashingTon Logo -->
         <span class="navbar-brand mx-auto d-md-none text-white">The Washington Times</span>
 
         <!-- Account Icon -->
-        <button class="btn d-flex d-md-none" type="button" id="closeButtonRight" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-            <i class="fa fa-user-circle-o" style="font-size:36px; color: white"></i>
+        <button class="btn d-flex d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <i class="fa fa-user-circle-o"></i>
         </button>
 
-        <!-- Beginning of navigational bar for big screens -->
+        <!-- Navigational bar for medium/big screens -->
         <div class="collapse navbar-collapse">
             <div class="container d-flex justify-content-center">
                 <ul class="navbar-nav d-flex flex-row gap-3">
@@ -118,9 +117,114 @@
                 </ul>
             </div>
         </div>
-        <!-- Beginning of navigational bar for small screens -->
-
     </div>
 </nav>
+<!-- Navigational bar for small/mobile screens -->
+<!-- Offcanvas Left (Hamburger) -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+    <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="mb-3">
+            <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNews" aria-expanded="false" aria-controls="collapseNews">News</button>
+            <div class="collapse" id="collapseNews">
+                <ul class="list-unstyled ps-3 text-start m-3">
+                    <li><a class="text-white" href="#">Stuff</a></li>
+                    <li><a class="text-white" href="#">Other Stuff</a></li>
+                    <li><a class="text-white" href="#">Other magical Stuff</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePolicy" aria-expanded="false" aria-controls="collapsePolicy">Policy</button>
+            <div class="collapse" id="collapsePolicy">
+                <ul class="list-unstyled ps-3 text-start m-3">
+                    <li><a class="text-white" href="#">Stuff</a></li>
+                    <li><a class="text-white" href="#">Other Stuff</a></li>
+                    <li><a class="text-white" href="#">Other magical Stuff</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCommentary" aria-expanded="false" aria-controls="collapseCommentary">Commentary</button>
+            <div class="collapse" id="collapseCommentary">
+                <ul class="list-unstyled ps-3 text-start m-3">
+                    <li><a class="text-white" href="#">Stuff</a></li>
+                    <li><a class="text-white" href="#">Other Stuff</a></li>
+                    <li><a class="text-white" href="#">Other magical Stuff</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSport" aria-expanded="false" aria-controls="collapseSport">Sport</button>
+            <div class="collapse" id="collapseSport">
+                <ul class="list-unstyled ps-3 text-start m-3">
+                    <li><a class="text-white" href="#">Stuff</a></li>
+                    <li><a class="text-white" href="#">Other Stuff</a></li>
+                    <li><a class="text-white" href="#">Other magical Stuff</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSponsored" aria-expanded="false" aria-controls="collapseSponsored">Sponsored</button>
+            <div class="collapse" id="collapseSponsored">
+                <ul class="list-unstyled ps-3 text-start m-3">
+                    <li><a class="text-white" href="#">Stuff</a></li>
+                    <li><a class="text-white" href="#">Other Stuff</a></li>
+                    <li><a class="text-white" href="#">Other magical Stuff</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEvents" aria-expanded="false" aria-controls="collapseEvents">Events</button>
+            <div class="collapse" id="collapseEvents">
+                <ul class="list-unstyled ps-3 text-start m-3">
+                    <li><a class="text-white" href="#">Stuff</a></li>
+                    <li><a class="text-white" href="#">Other Stuff</a></li>
+                    <li><a class="text-white" href="#">Other magical Stuff</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVideoPodcast" aria-expanded="false" aria-controls="collapseVideoPodcast">Video/Podcast</button>
+            <div class="collapse" id="collapseVideoPodcast">
+                <ul class="list-unstyled ps-3 text-start m-3">
+                    <li><a class="text-white" href="#">Stuff</a></li>
+                    <li><a class="text-white" href="#">Other Stuff</a></li>
+                    <li><a class="text-white" href="#">Other magical Stuff</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGames" aria-expanded="false" aria-controls="collapseGames">Games</button>
+            <div class="collapse" id="collapseGames">
+                <ul class="list-unstyled ps-3 text-start m-3">
+                    <li><a class="text-white" href="#">Stuff</a></li>
+                    <li><a class="text-white" href="#">Other Stuff</a></li>
+                    <li><a class="text-white" href="#">Other magical Stuff</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </div>
+</div>
+
+<!-- Offcanvas Right (Account) -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Account</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <!-- Contenuto personalizzabile -->
+        <p>Benvenuto! Effettua il login o registrati.</p>
+        <button class="btn btn-primary w-100 mb-2">Login</button>
+        <button class="btn btn-secondary w-100">Registrati</button>
+    </div>
+</div>
+
 </body>
 </html>
