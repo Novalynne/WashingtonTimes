@@ -227,3 +227,66 @@ a, .article-headline{
     font-size:13px;
     font-weight: lighter;
 }
+
+/* ADD CSS */
+.add-space{
+    margin-top: 15px;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* MAIN PAGE CSS */
+.article-padding{
+    padding: 10px;
+}
+.breaking-news{
+    margin-bottom: 16px;
+    display: flex;
+    gap: 10px;
+}
+.breaking-news a{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+.breaking-news a:hover{
+    color: #a9091f;
+}
+.sponsored-content{
+    font-family: Arial, serif;
+    color: #a9091f;
+    font-size: 14px;
+    font-weight: bold;
+}
+.sponsored-content a{
+    font-size: 20px;
+}
+.sponsored-content-color{
+    background-color: #ededed;
+    padding: 10px;
+}
+.blockTitle{
+    background-image: linear-gradient(90deg, #9ea7b3 30%, #fff);
+    text-shadow: 0 0 9px rgba(0, 0, 0, .4);
+    color: #fff;
+    border-bottom: 0;
+    padding: 4px 12px;
+    margin: 0 0 16px;
+    font-size: 20px;
+}
+.most-popular h6{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+.most-popular a:hover{
+    color: #a9091f;
+}
+.most-popular{
+    margin-bottom: 20px;
+}
+.doge-watch a:hover{
+    text-decoration: underline;
+    color:black !important;
+}
