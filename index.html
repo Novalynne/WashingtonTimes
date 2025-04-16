@@ -10,230 +10,298 @@
     <title>WashingtonTimes PPM</title>
 </head>
 <body>
-<!-- Main Header -->
-<div class="d-none d-md-block">
-    <div class="row align-items-center">
-        <div class="col-md-4 offset-md-4"> <!-- Logo Zone -->
-            <div class="logo">
-                <a href="#">
-                    <img src="https://placehold.co/500x80?font=playfair-display&text=THE+WASHINGTON+TIMES" class="img-fluid" alt="Main Logo">
-                    <h5>America's Newspaper</h5>
-                </a>
+<!-- Header -->
+<header>
+    <div class="d-none d-md-block">
+        <div class="row align-items-center">
+            <div class="col-md-4 offset-md-4"> <!-- Logo Zone -->
+                <div class="logo">
+                    <a href="#">
+                        <img src="https://placehold.co/500x80?font=playfair-display&text=THE+WASHINGTON+TIMES" class="img-fluid" alt="Washington Times Logo" data-bs-toggle="tooltip" title="The Washington Times | Home">
+                        <h5>America's Newspaper</h5>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4 text-end"> <!-- Subscribe Zone -->
-            <button type="button" class="Icon" data-bs-toggle="modal" data-bs-target="#exampleModal"><!-- TODO: (if i want) Button trigger modal -->
-                <i class="fa fa-envelope" id="emailIcon"></i>
-            </button>
-            <button type="button" class="btn btn-primary">Subscribe</button>
-            <button type="button" class="btn btn-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sign in</button>
-        </div>
-    </div>
-</div>
-<!-- Navigational Bar -->
-<nav class="navbar navbar-expand-md nav-color sticky-top">
-    <div class="container-fluid">
-        <!-- Hamburger button for small devices -->
-        <button class="btn d-flex d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
-            <i class="fa fa-bars"></i>
-        </button>
-
-        <!-- WashingTon Logo -->
-        <span class="navbar-brand mx-auto d-md-none text-white">The Washington Times</span>
-
-        <!-- Account Icon -->
-        <button class="btn d-flex d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-            <i class="fa fa-user-circle-o"></i>
-        </button>
-
-        <!-- Navigational bar for medium/big screens -->
-        <div class="collapse navbar-collapse">
-            <div class="container d-flex justify-content-center">
-                <ul class="navbar-nav d-flex flex-row gap-3">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">News</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Stuff</a></li>
-                            <li><a class="dropdown-item" href="#">Other Stuff</a></li>
-                            <li><a class="dropdown-item" href="#">Other magical Stuff</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Policy</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Stuff</a></li>
-                            <li><a class="dropdown-item" href="#">Other Stuff</a></li>
-                            <li><a class="dropdown-item" href="#">Other magical Stuff</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Commentary</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Stuff</a></li>
-                            <li><a class="dropdown-item" href="#">Other Stuff</a></li>
-                            <li><a class="dropdown-item" href="#">Other magical Stuff</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Sports</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Stuff</a></li>
-                            <li><a class="dropdown-item" href="#">Other Stuff</a></li>
-                            <li><a class="dropdown-item" href="#">Other magical Stuff</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Sponsored</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Stuff</a></li>
-                            <li><a class="dropdown-item" href="#">Other Stuff</a></li>
-                            <li><a class="dropdown-item" href="#">Other magical Stuff</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Events</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Stuff</a></li>
-                            <li><a class="dropdown-item" href="#">Other Stuff</a></li>
-                            <li><a class="dropdown-item" href="#">Other magical Stuff</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Video/Podcast</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Stuff</a></li>
-                            <li><a class="dropdown-item" href="#">Other Stuff</a></li>
-                            <li><a class="dropdown-item" href="#">Other magical Stuff</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Games</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Stuff</a></li>
-                            <li><a class="dropdown-item" href="#">Other Stuff</a></li>
-                            <li><a class="dropdown-item" href="#">Other magical Stuff</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</nav>
-<!-- Navigational bar for small/mobile screens -->
-<!-- Offcanvas Left (Hamburger) -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
-    <div class="offcanvas-header">
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        <div class="input-group m-3">
-            <div class="input-wrapper">
-                <input type="text" class="form-control" placeholder="Search" aria-label="Search">
-                <button class="search-icon-btn" type="button">
-                    <i class="fa fa-search" style="font-size: 24px"></i>
+            <div class="col-md-4 text-end"> <!-- Subscribe Zone -->
+                <button type="button" class="Icon">
+                    <i class="fa fa-envelope" id="emailIcon"></i>
                 </button>
+                <button type="button" class="btn btn-primary">Subscribe</button>
+                <button type="button" class="btn btn-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sign in</button>
             </div>
         </div>
     </div>
-    <div class="offcanvas-body">
-        <div class="mb-3">
-            <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNews" aria-expanded="false" aria-controls="collapseNews">News</button>
-            <div class="collapse" id="collapseNews">
-                <ul class="list-unstyled ps-3 text-start m-3">
-                    <li><a class="text-white" href="#">Stuff</a></li>
-                    <li><a class="text-white" href="#">Other Stuff</a></li>
-                    <li><a class="text-white" href="#">Other magical Stuff</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="mb-3">
-            <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePolicy" aria-expanded="false" aria-controls="collapsePolicy">Policy</button>
-            <div class="collapse" id="collapsePolicy">
-                <ul class="list-unstyled ps-3 text-start m-3">
-                    <li><a class="text-white" href="#">Stuff</a></li>
-                    <li><a class="text-white" href="#">Other Stuff</a></li>
-                    <li><a class="text-white" href="#">Other magical Stuff</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="mb-3">
-            <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCommentary" aria-expanded="false" aria-controls="collapseCommentary">Commentary</button>
-            <div class="collapse" id="collapseCommentary">
-                <ul class="list-unstyled ps-3 text-start m-3">
-                    <li><a class="text-white" href="#">Stuff</a></li>
-                    <li><a class="text-white" href="#">Other Stuff</a></li>
-                    <li><a class="text-white" href="#">Other magical Stuff</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="mb-3">
-            <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSport" aria-expanded="false" aria-controls="collapseSport">Sport</button>
-            <div class="collapse" id="collapseSport">
-                <ul class="list-unstyled ps-3 text-start m-3">
-                    <li><a class="text-white" href="#">Stuff</a></li>
-                    <li><a class="text-white" href="#">Other Stuff</a></li>
-                    <li><a class="text-white" href="#">Other magical Stuff</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="mb-3">
-            <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSponsored" aria-expanded="false" aria-controls="collapseSponsored">Sponsored</button>
-            <div class="collapse" id="collapseSponsored">
-                <ul class="list-unstyled ps-3 text-start m-3">
-                    <li><a class="text-white" href="#">Stuff</a></li>
-                    <li><a class="text-white" href="#">Other Stuff</a></li>
-                    <li><a class="text-white" href="#">Other magical Stuff</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="mb-3">
-            <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEvents" aria-expanded="false" aria-controls="collapseEvents">Events</button>
-            <div class="collapse" id="collapseEvents">
-                <ul class="list-unstyled ps-3 text-start m-3">
-                    <li><a class="text-white" href="#">Stuff</a></li>
-                    <li><a class="text-white" href="#">Other Stuff</a></li>
-                    <li><a class="text-white" href="#">Other magical Stuff</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="mb-3">
-            <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVideoPodcast" aria-expanded="false" aria-controls="collapseVideoPodcast">Video/Podcast</button>
-            <div class="collapse" id="collapseVideoPodcast">
-                <ul class="list-unstyled ps-3 text-start m-3">
-                    <li><a class="text-white" href="#">Stuff</a></li>
-                    <li><a class="text-white" href="#">Other Stuff</a></li>
-                    <li><a class="text-white" href="#">Other magical Stuff</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="mb-3">
-            <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGames" aria-expanded="false" aria-controls="collapseGames">Games</button>
-            <div class="collapse" id="collapseGames">
-                <ul class="list-unstyled ps-3 text-start m-3">
-                    <li><a class="text-white" href="#">Stuff</a></li>
-                    <li><a class="text-white" href="#">Other Stuff</a></li>
-                    <li><a class="text-white" href="#">Other magical Stuff</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- Offcanvas Right (Account) -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header">
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-        <button class="btn-canvas-account w-100 mb-2">Sign in</button>
-        <button class="btn-canvas-account w-100 mb-2">Subscribe</button>
-        <div>
-            <ul class="list-unstyled ps-3 text-start m-3">
-                <li><a class="text-account" href="#"> Newsletter signup </a></li>
-                <li><a class="text-account" href="#"> Gift subscriptions </a></li>
-                <li><a class="text-account" href="#"> Customer service </a></li>
-            </ul>
+    <!-- Navigational Bar -->
+    <nav class="navbar navbar-expand-md nav-color sticky-top">
+        <div class="container-fluid">
+            <!-- Hamburger button for small devices -->
+            <button class="btn d-flex d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- WashingTon Logo -->
+            <span class="navbar-brand mx-auto d-md-none text-white">The Washington Times</span>
+
+            <!-- Account Icon -->
+            <button class="btn d-flex d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <i class="fa fa-user-circle-o"></i>
+            </button>
+
+            <!-- Navigational bar for medium/big screens -->
+            <div class="collapse navbar-collapse">
+                <div class="container d-flex justify-content-center">
+                    <ul class="navbar-nav d-flex flex-row gap-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">News</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Stuff</a></li>
+                                <li><a class="dropdown-item" href="#">Other Stuff</a></li>
+                                <li><a class="dropdown-item" href="#">Other magical Stuff</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Policy</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Stuff</a></li>
+                                <li><a class="dropdown-item" href="#">Other Stuff</a></li>
+                                <li><a class="dropdown-item" href="#">Other magical Stuff</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Commentary</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Stuff</a></li>
+                                <li><a class="dropdown-item" href="#">Other Stuff</a></li>
+                                <li><a class="dropdown-item" href="#">Other magical Stuff</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Sports</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Stuff</a></li>
+                                <li><a class="dropdown-item" href="#">Other Stuff</a></li>
+                                <li><a class="dropdown-item" href="#">Other magical Stuff</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Sponsored</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Stuff</a></li>
+                                <li><a class="dropdown-item" href="#">Other Stuff</a></li>
+                                <li><a class="dropdown-item" href="#">Other magical Stuff</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Events</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Stuff</a></li>
+                                <li><a class="dropdown-item" href="#">Other Stuff</a></li>
+                                <li><a class="dropdown-item" href="#">Other magical Stuff</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Video/Podcast</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Stuff</a></li>
+                                <li><a class="dropdown-item" href="#">Other Stuff</a></li>
+                                <li><a class="dropdown-item" href="#">Other magical Stuff</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Games</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Stuff</a></li>
+                                <li><a class="dropdown-item" href="#">Other Stuff</a></li>
+                                <li><a class="dropdown-item" href="#">Other magical Stuff</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigational bar for small/mobile screens -->
+    <!-- Offcanvas Left (Hamburger) -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="input-group m-3">
+                <div class="input-wrapper">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                    <button class="search-icon-btn" type="button">
+                        <i class="fa fa-search" style="font-size: 24px"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <div class="mb-3">
+                <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNews" aria-expanded="false" aria-controls="collapseNews">News</button>
+                <div class="collapse" id="collapseNews">
+                    <ul class="list-unstyled ps-3 text-start m-3">
+                        <li><a class="text-white" href="#">Stuff</a></li>
+                        <li><a class="text-white" href="#">Other Stuff</a></li>
+                        <li><a class="text-white" href="#">Other magical Stuff</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePolicy" aria-expanded="false" aria-controls="collapsePolicy">Policy</button>
+                <div class="collapse" id="collapsePolicy">
+                    <ul class="list-unstyled ps-3 text-start m-3">
+                        <li><a class="text-white" href="#">Stuff</a></li>
+                        <li><a class="text-white" href="#">Other Stuff</a></li>
+                        <li><a class="text-white" href="#">Other magical Stuff</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCommentary" aria-expanded="false" aria-controls="collapseCommentary">Commentary</button>
+                <div class="collapse" id="collapseCommentary">
+                    <ul class="list-unstyled ps-3 text-start m-3">
+                        <li><a class="text-white" href="#">Stuff</a></li>
+                        <li><a class="text-white" href="#">Other Stuff</a></li>
+                        <li><a class="text-white" href="#">Other magical Stuff</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSport" aria-expanded="false" aria-controls="collapseSport">Sport</button>
+                <div class="collapse" id="collapseSport">
+                    <ul class="list-unstyled ps-3 text-start m-3">
+                        <li><a class="text-white" href="#">Stuff</a></li>
+                        <li><a class="text-white" href="#">Other Stuff</a></li>
+                        <li><a class="text-white" href="#">Other magical Stuff</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSponsored" aria-expanded="false" aria-controls="collapseSponsored">Sponsored</button>
+                <div class="collapse" id="collapseSponsored">
+                    <ul class="list-unstyled ps-3 text-start m-3">
+                        <li><a class="text-white" href="#">Stuff</a></li>
+                        <li><a class="text-white" href="#">Other Stuff</a></li>
+                        <li><a class="text-white" href="#">Other magical Stuff</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEvents" aria-expanded="false" aria-controls="collapseEvents">Events</button>
+                <div class="collapse" id="collapseEvents">
+                    <ul class="list-unstyled ps-3 text-start m-3">
+                        <li><a class="text-white" href="#">Stuff</a></li>
+                        <li><a class="text-white" href="#">Other Stuff</a></li>
+                        <li><a class="text-white" href="#">Other magical Stuff</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVideoPodcast" aria-expanded="false" aria-controls="collapseVideoPodcast">Video/Podcast</button>
+                <div class="collapse" id="collapseVideoPodcast">
+                    <ul class="list-unstyled ps-3 text-start m-3">
+                        <li><a class="text-white" href="#">Stuff</a></li>
+                        <li><a class="text-white" href="#">Other Stuff</a></li>
+                        <li><a class="text-white" href="#">Other magical Stuff</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-canvas w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGames" aria-expanded="false" aria-controls="collapseGames">Games</button>
+                <div class="collapse" id="collapseGames">
+                    <ul class="list-unstyled ps-3 text-start m-3">
+                        <li><a class="text-white" href="#">Stuff</a></li>
+                        <li><a class="text-white" href="#">Other Stuff</a></li>
+                        <li><a class="text-white" href="#">Other magical Stuff</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
+    <!-- Offcanvas Right (Account) -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <button class="btn-canvas-account w-100 mb-2">Sign in</button>
+            <button class="btn-canvas-account w-100 mb-2">Subscribe</button>
+            <div>
+                <ul class="list-unstyled ps-3 text-start m-3">
+                    <li><a class="text-account" href="#"> Newsletter signup </a></li>
+                    <li><a class="text-account" href="#"> Gift subscriptions </a></li>
+                    <li><a class="text-account" href="#"> Customer service </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- News Anteprime -->
+    <div class="container-fluid podcast">
+        <div class="container d-none d-md-block">
+            <div class="row">
+                <div class="col-md-4 podcastItem">
+                    <article class="d-flex align-items-center gap-3">
+                        <div><a href="#"> <img src="https://placehold.co/70x70" alt="photo"> </a> </div>
+                        <div class="podcastText">
+                            <h2 class="article-headline"><a href="#">Lorem Impum</a></h2>
+                            <span class="podcasthed">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </span>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4 podcastItem">
+                    <article class="d-flex align-items-center gap-3">
+                        <div><a href="#"> <img src="https://placehold.co/70x70" alt="photo"> </a> </div>
+                        <div class="podcastText">
+                            <h2 class="article-headline"><a href="#">Lorem Impum</a></h2>
+                            <span class="podcasthed">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </span>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4 podcastItem">
+                    <article class="d-flex align-items-center gap-3">
+                        <div><a href="#"> <img src="https://placehold.co/70x70" alt="photo"> </a> </div>
+                        <div class="podcastText">
+                            <h2 class="article-headline"><a href="#">Lorem Impum</a></h2>
+                            <span class="podcasthed">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trending -->
+    <div class="container d-none d-md-block topic">
+        <div> <strong> TRENDING: </strong></div>
+        <div class="head-topic-element"> <a href="#">DONALD TRUMP</a></div>
+        <div class="topic-element"> <a href="#" title="China">CHINA</a></div>
+        <div class="topic-element"> <a href="#" title="White House">WHITE HOUSE</a></div>
+        <div class="topic-element"> <a href="#" title="Iran">IRAN</a></div>
+        <div class="topic-element"> <a href="#" title="Tehran">TEHRAN</a></div>
+        <div class="topic-element"> <a href="#" title="Trump Administration">TRUMP ADMINISTRATION</a></div>
+        <div class="topic-element"> <a href="#" title="Beijing">BEIJING</a></div>
+        <div class="topic-element"> <a href="#" title="El Salvador">EL SALVADOR</a></div>
+        <div class="topic-element"> <a href="#" title="Federal Bereau Of Investigation">FEDERAL BUREAU OF INVESTIGATION</a></div>
+        <div class="topic-element"> <a href="#" title="Hamas">HAMAS</a></div>
+    </div>
+</header>
+
+<main>
+
+
+</main>
+
+<footer>
+
+</footer>
 </body>
 </html>

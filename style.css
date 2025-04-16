@@ -7,9 +7,6 @@ body{
 .logo{
     text-align: center;
 }
-.textLogo{
-    width: 500px;
-}
 
 h5{
      font-style: italic;
@@ -180,4 +177,53 @@ a, .btn-link{
 }
 .search-icon-btn:hover i {
     color: #a9091f;
+}
+
+/* NEWS ANTEPRIMA */
+.podcast{
+    background-color: #ededed;
+}
+a, .article-headline{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+.podcasthed{
+    color: gray;
+    font-weight: normal;
+}
+.podcastItem{
+    padding: 20px;
+    align-content: center;
+}
+.podcastText{
+    max-width: 300px;
+}
+
+/* TRENDING */
+.topic{
+    text-align: center;
+    margin-top: 8px;
+    font-size: 13px;
+    font-family: Arial, serif;
+}
+.topic>*{
+    display: inline;
+}
+.topic-element a{
+    padding: 0 5px;
+    border-left: 1px solid #222;
+    color: gray;
+    font-size:13px;
+    font-weight: lighter;
+}
+.head-topic-element a:hover, .topic-element a:hover{
+    text-decoration: underline;
+}
+.head-topic-element a{
+    padding: 0 5px;
+    color: gray;
+    font-size:13px;
+    font-weight: lighter;
 }
