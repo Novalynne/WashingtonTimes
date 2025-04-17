@@ -102,6 +102,8 @@ a, .btn-link{
     background-color: transparent;
     border: none;
     border-bottom: 1px solid white;
+    font-size: 20px;
+    font-weight: bold;
 }
 #offcanvasRight{
     width: 250px;
@@ -355,3 +357,6 @@ section.input-group-text:active {
     border-color: #a9091f; !important;
 }
 
+.text-white{
+    font-weight: normal;
+}
