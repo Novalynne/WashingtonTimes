@@ -237,6 +237,10 @@ a, .article-headline{
 }
 
 /* MAIN PAGE CSS */
+.central-colum-border{
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+}
 .article-padding{
     padding: 10px;
 }
@@ -290,3 +294,64 @@ a, .article-headline{
     text-decoration: underline;
     color:black !important;
 }
+.latest-reaction a:hover{
+    color:black !important;
+}
+.premium{
+    font-weight: bold;
+    color: white;
+    background-color: #a9091f;
+    font-family: Arial, serif;
+    padding: 2px;
+    font-size: 10px;
+}
+.blue-link{
+    color:cornflowerblue; !important;
+    font-weight: normal;
+}
+.arrow-link{
+    color: gray; !important;
+    font-size:14px;
+}
+.arrow-link:hover{
+    color: #a9091f;
+}
+.span-commentary{
+    border-bottom: 1px solid #ededed;
+    font-weight: bold;
+    font-size: 18px; !important;
+}
+
+.socialIcon{
+    font-size: 25px; /*TODO: figure out why this is not applied on Font Awesom Icon*/
+}
+#facebook, #instagram, #rss, #twitter{
+    color: gray;
+    font-size: 30px;
+}
+#facebook:hover{
+    color: blue;
+}
+#instagram:hover{
+    color: #6f42c1;
+}
+#rss:hover{
+    color: orange;
+}
+#twitter:hover{
+    color: #0dcaf0;
+}
+.follow-us{
+    color:black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+section.form-control:focus,
+section.input-group-text:focus, /*TODO: figure out why this is not applied*/
+section.form-control:active,
+section.input-group-text:active {
+    box-shadow: none;
+    border-color: #a9091f; !important;
+}
+
