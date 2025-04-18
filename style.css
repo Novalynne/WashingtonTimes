@@ -246,17 +246,32 @@ a, .article-headline{
 .article-padding{
     padding: 10px;
 }
-.breaking-news{
+.article-news{
     margin-bottom: 16px;
     display: flex;
     gap: 10px;
 }
-.breaking-news a{
+.article-news h2 a {
+    font-size: 30px;
+}
+.article-news h6 a {
+    font-size: 18px;
+}
+.article-news h4 a{
+    font-size: 20px;
+}
+.article-news p{
+    font-size: 20px;
+    color: #555555;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.article-news a{
     color: black;
     font-weight: bold;
     font-size: 16px;
 }
-.breaking-news a:hover{
+.article-news a:hover{
     color: #a9091f;
 }
 .sponsored-content{
@@ -292,11 +307,11 @@ a, .article-headline{
 .most-popular{
     margin-bottom: 20px;
 }
-.doge-watch a:hover{
+.black-underline-link a:hover{
     text-decoration: underline;
     color:black !important;
 }
-.latest-reaction a:hover{
+.black-link a:hover{
     color:black !important;
 }
 .premium{
@@ -307,10 +322,7 @@ a, .article-headline{
     padding: 2px;
     font-size: 10px;
 }
-.blue-link{
-    color:cornflowerblue; !important;
-    font-weight: normal;
-}
+
 .arrow-link{
     color: gray; !important;
     font-size:14px;
@@ -359,4 +371,12 @@ section.input-group-text:active {
 
 .text-white{
     font-weight: normal;
+}
+.blue-link a{
+    color:cornflowerblue; !important;
+    font-weight: normal;
+}
+.blue-link a:hover{
+    color: cornflowerblue !important;
+    text-decoration: underline;
 }
