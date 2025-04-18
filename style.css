@@ -231,14 +231,6 @@ a, .article-headline{
 }
 /* STOP TRENDING */
 
-/* ADD CSS */
-.add-space{
-    margin-top: 15px;
-    align-content: center;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
 /* MAIN PAGE CSS */
 .bottom-border{
     border-bottom: 1px solid #ededed;
@@ -481,6 +473,15 @@ section.input-group-text:active {
 }
 /* STOP ARTICLE VISIBLE ON MOBILE CSS */
 
+/* ADD CSS */
+.add-space{
+    margin-top: 15px;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+/* STOP ADD CSS */
+
 /* PADDING AND MARGING DIRECTIVES FOR LARGER SCREENS */
 /* I had to create a custom one myself cause the px-lg-5 BootstraP gives you wasn't enough */
 @media (min-width: 992px) {
@@ -489,10 +490,6 @@ section.input-group-text:active {
         padding-left: var(--bs-gutter-x, 0.75rem);
         margin-right: auto;
         margin-left: auto;
-    }
-}
-@media (min-width: 992px) {
-    .px-lg-custom {
         max-width: 960px;
     }
 }
