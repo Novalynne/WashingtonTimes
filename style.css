@@ -240,6 +240,10 @@ a, .article-headline{
 }
 
 /* MAIN PAGE CSS */
+.bottom-border{
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 30px;
+}
 .central-colum-border{
     border-left: 1px solid #ededed;
     border-right: 1px solid #ededed;
