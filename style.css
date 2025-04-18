@@ -7,12 +7,12 @@ body{
 .logo{
     text-align: center;
 }
-
 h5{
      font-style: italic;
      font-size: 18px;
      color: black;
  }
+/* STOP CSS HEADER */
 
 /* SUBSCRIBE, SIGN-IN AND EMAIL ICON BUTTON CSS */
 .btn-primary{
@@ -30,7 +30,6 @@ h5{
     background-color: red;
     border-color: red;
 }
-
 a, .btn-link{
     color: gray;
     text-decoration: none;
@@ -55,6 +54,7 @@ a, .btn-link{
     position: relative;
     bottom: -8px;
 }
+/* STOP SUBSCRIBE, SIGN-IN AND EMAIL ICON BUTTON CSS */
 
 /* NAVIGATIONAL BAR CSS */
 .nav-color{
@@ -86,6 +86,7 @@ a, .btn-link{
     color: white;
     font-size: 24px;
 }
+/* STOP NAVIGATIONAL BAR CSS */
 
 /* OFF CANVAS LEFT AND RIGHT CSS */
 .offcanvas-body{
@@ -111,7 +112,6 @@ a, .btn-link{
 #offcanvasLeft{
     width: 300px;
 }
-
 .btn-canvas-account {
     padding: 0.75rem 1rem;
     border: 1px solid #777;
@@ -124,7 +124,6 @@ a, .btn-link{
 .btn-canvas-account:hover {
     border-color: white;
 }
-
 .text-account {
     color: white;
     border-bottom: 1px solid #777;
@@ -142,7 +141,6 @@ a, .btn-link{
     background-color: transparent; !important; /*TODO: figure out why this is not applied on close button*/
     border: none; !important;
 }
-
 .form-control,
 .input-group-text {
     border-radius: 30px;
@@ -162,7 +160,6 @@ a, .btn-link{
     position: relative;
     width: 100%;
 }
-
 .search-icon-btn {
     position: absolute;
     right: 10px;
@@ -180,6 +177,8 @@ a, .btn-link{
 .search-icon-btn:hover i {
     color: #a9091f;
 }
+/* STOP SEARCH BAR CSS */
+/* STOP OFF CANVAS LEFT AND RIGHT CSS */
 
 /* NEWS ANTEPRIMA */
 .podcast{
@@ -195,13 +194,14 @@ a, .article-headline{
     color: gray;
     font-weight: normal;
 }
-.podcastItem{
+.podcast-item{
     padding: 20px;
     align-content: center;
 }
-.podcastText{
+.podcast-text{
     max-width: 300px;
 }
+/* STOP NEWS ANTEPRIMA */
 
 /* TRENDING */
 .topic{
@@ -229,6 +229,7 @@ a, .article-headline{
     font-size:13px;
     font-weight: lighter;
 }
+/* STOP TRENDING */
 
 /* ADD CSS */
 .add-space{
@@ -242,9 +243,6 @@ a, .article-headline{
 .central-colum-border{
     border-left: 1px solid #ededed;
     border-right: 1px solid #ededed;
-}
-.article-padding{
-    padding: 10px;
 }
 .article-news{
     margin-bottom: 16px;
@@ -260,6 +258,9 @@ a, .article-headline{
 .article-news h4 a{
     font-size: 20px;
 }
+.more-important-article h4 a{
+     font-size: 25px; !important;
+}
 .article-news p{
     font-size: 20px;
     color: #555555;
@@ -274,9 +275,31 @@ a, .article-headline{
 .article-news a:hover{
     color: #a9091f;
 }
+.black-underline-link a:hover{
+    text-decoration: underline;
+    color:black !important;
+}
+.black-link a:hover{
+    color:black !important;
+}
+.arrow-link{
+    color: gray; !important;
+    font-size:14px;
+}
+.arrow-link:hover{
+    color: #a9091f;
+}
+.blue-link a{
+    color:cornflowerblue; !important;
+    font-weight: normal;
+}
+.blue-link a:hover{
+    color: cornflowerblue !important;
+    text-decoration: underline;
+}
 .sponsored-content{
     font-family: Arial, serif;
-    color: #a9091f;
+    color: #a8091f;
     font-size: 14px;
     font-weight: bold;
 }
@@ -284,10 +307,10 @@ a, .article-headline{
     font-size: 20px;
 }
 .sponsored-content-color{
-    background-color: #ededed;
+    background-color: #e6e8eb;
     padding: 10px;
 }
-.blockTitle{
+.gradient-title{
     background-image: linear-gradient(90deg, #9ea7b3 30%, #fff);
     text-shadow: 0 0 9px rgba(0, 0, 0, .4);
     color: #fff;
@@ -295,6 +318,94 @@ a, .article-headline{
     padding: 4px 12px;
     margin: 0 0 16px;
     font-size: 20px;
+}
+.premium{
+     font-weight: bold;
+     color: white;
+     background-color: #a9091f;
+     font-family: Arial, serif;
+     padding: 2px;
+     font-size: 10px;
+ }
+.follow-us{
+    color:black;
+    font-weight: bold;
+    font-size: 25px;
+}
+.video-box, .newsletter-box{
+    background-color: black;
+    color: white;
+    padding: 2px;
+    font-size: 10px;
+    font-family: Arial, serif;
+    font-weight: bold;
+}
+.commentary-box{
+    background-color: #7e7e7e;
+    color: white;
+    padding: 2px;
+    font-size: 10px;
+    font-family: Arial, serif;
+    font-weight: bold;
+}
+.span-commentary{
+    border-bottom: 1px solid #ededed;
+    font-weight: bold;
+    font-size: 18px; !important;
+}
+.text-white{
+    font-weight: normal;
+}
+.color-blue-green{
+    color: #1f4360; !important;
+}
+.background-blue{
+    background-color: rgb(232, 238, 241);
+    padding: 10px;
+    margin: 0;
+}
+.thin-line{
+    color: #7e7e7e;
+    font-weight: bold;
+    align-items: center;
+    align-content: center;
+}
+.section-title{
+    margin-top: 20px;
+    margin-bottom: 16px;
+    font-family: Arial, serif;
+    font-weight: bold;
+}
+.section-title hr{
+    color: #842029;
+    width: 95%;
+    border-bottom: #842029 solid 1px;
+    margin-top: 1px;
+    margin-bottom: 0;
+    align-self: center;
+ }
+.section-title-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+}
+.section-header-red{
+    color: #a9091f;
+}
+.section-header-black{
+    color:black;
+}
+.threat-status .section-title h3 a{
+    font-size: 25px;
+    color: #1f4360;
+    padding: 2px;
+}
+.threat-status .section-title h3 a:last-child{
+    color: white;
+    background-color: darkred;
+    font-weight: 700;
 }
 .most-popular h6{
     font-size: 25px;
@@ -307,36 +418,9 @@ a, .article-headline{
 .most-popular{
     margin-bottom: 20px;
 }
-.black-underline-link a:hover{
-    text-decoration: underline;
-    color:black !important;
-}
-.black-link a:hover{
-    color:black !important;
-}
-.premium{
-    font-weight: bold;
-    color: white;
-    background-color: #a9091f;
-    font-family: Arial, serif;
-    padding: 2px;
-    font-size: 10px;
-}
 
-.arrow-link{
-    color: gray; !important;
-    font-size:14px;
-}
-.arrow-link:hover{
-    color: #a9091f;
-}
-.span-commentary{
-    border-bottom: 1px solid #ededed;
-    font-weight: bold;
-    font-size: 18px; !important;
-}
-
-.socialIcon{
+/* SOCIALS ICONS CSS */
+.social-icon{
     font-size: 25px; /*TODO: figure out why this is not applied on Font Awesom Icon*/
 }
 #facebook, #instagram, #rss, #twitter{
@@ -355,11 +439,7 @@ a, .article-headline{
 #twitter:hover{
     color: #0dcaf0;
 }
-.follow-us{
-    color:black;
-    font-weight: bold;
-    font-size: 25px;
-}
+/* STOP SOCIALS ICONS CSS */
 
 section.form-control:focus,
 section.input-group-text:focus, /*TODO: figure out why this is not applied*/
@@ -369,14 +449,61 @@ section.input-group-text:active {
     border-color: #a9091f; !important;
 }
 
-.text-white{
-    font-weight: normal;
+/* ARTICLE VISIBLE ON MOBILE CSS */
+.mobile-article {
+    background-image: url(https://placehold.co/1200x670);
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
 }
-.blue-link a{
-    color:cornflowerblue; !important;
-    font-weight: normal;
+.text-article{
+    position: absolute;
+    bottom: 0;
+    padding-left: 8px;
+    font-size: 25px;
 }
-.blue-link a:hover{
-    color: cornflowerblue !important;
+.text-article h2 a{
+    color: white;
+    font-weight: 700;
+}
+.meta-article span, .meta-article span a{
+    color: white;
+    font-size:14px;
+}
+.meta-article span a:hover{
     text-decoration: underline;
 }
+/* STOP ARTICLE VISIBLE ON MOBILE CSS */
+
+/* PADDING AND MARGING DIRECTIVES FOR LARGER SCREENS */
+/* I had to create a custom one myself cause the px-lg-5 BootstraP gives you wasn't enough */
+@media (min-width: 992px) {
+    .px-lg-custom{
+        padding-right: var(--bs-gutter-x, 0.75rem);
+        padding-left: var(--bs-gutter-x, 0.75rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media (min-width: 992px) {
+    .px-lg-custom {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .px-lg-custom {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .px-lg-custom {
+        max-width: 1320px;
+    }
+}
+/* STOP PADDING AND MARGING DIRECTIVES FOR LARGER SCREENS */
+
+/* STOP MAIN PAGE CSS */

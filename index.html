@@ -243,28 +243,28 @@
 <div class="container-fluid podcast">
     <div class="container d-none d-md-block">
         <div class="row">
-            <div class="col-md-4 podcastItem">
+            <div class="col-md-4 podcast-item">
                 <article class="d-flex align-items-center gap-3">
                     <div><a href="https://example.com"> <img src="https://placehold.co/70x70" alt="photo"></a></div>
-                    <div class="podcastText">
+                    <div class="podcast-text">
                         <h2 class="article-headline"><a href="https://example.com">Lorem Impum</a></h2>
                         <span class="podcasthed">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                     </div>
                 </article>
             </div>
-            <div class="col-md-4 podcastItem">
+            <div class="col-md-4 podcast-item">
                 <article class="d-flex align-items-center gap-3">
                     <div><a href="https://example.com"> <img src="https://placehold.co/70x70" alt="photo"></a></div>
-                    <div class="podcastText">
+                    <div class="podcast-text">
                         <h2 class="article-headline"><a href="https://example.com">Lorem Impum</a></h2>
                         <span class="podcasthed">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                     </div>
                 </article>
             </div>
-            <div class="col-md-4 podcastItem">
+            <div class="col-md-4 podcast-item">
                 <article class="d-flex align-items-center gap-3">
                     <div><a href="https://example.com"> <img src="https://placehold.co/70x70" alt="photo"></a></div>
-                    <div class="podcastText">
+                    <div class="podcast-text">
                         <h2 class="article-headline"><a href="https://example.com">Lorem Impum</a></h2>
                         <span class="podcasthed">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                     </div>
@@ -289,7 +289,7 @@
     <div class="topic-element"> <a href="https://example.com" title="Hamas">HAMAS</a></div>
 </div>
 
-<!-- TODO: CORRECT THE VISUAL OF ADDS AND OTHER STUFF WHEN THE SCREEN SIZE IS BETWEEN SMALL AND MD-->
+<!-- TODO: CORRECT THE VISUAL OF ADDS AND LATEST CARTOON, SUDOKU WHEN THE SCREEN SIZE IS BETWEEN SMALL AND MD-->
 <!-- Main -->
 <main>
     <!-- Space for add, I use iframe for adds because the original site does so, and because usually adds direct you to other sites-->
@@ -300,12 +300,12 @@
     </div>
 
     <!-- Main Body -->
-    <div class="container">
+    <div class="container-fluid px-lg-custom px-md-4 px-sm-3 px-2">
         <div class="row">
             <!-- Left Colum (visible on the right side of the screen when the dimention is md) -->
             <div class="col-12 col-lg-3 col-md-4 order-md-2 order-lg-1 d-none d-md-block">
                 <!-- News And Sponsored Content -->
-                <section>
+                <section id="newsletter">
                     <article class="article-news">
                         <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
                         <div><h6 class="m-0"><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h6></div>
@@ -326,7 +326,7 @@
                         <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
                         <div><h6 class="m-0"><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h6></div>
                     </article>
-                    <div>
+                    <div id="sponsored-content-left">
                         <span class="sponsored-content">SPONSORED CONTENT</span>
                         <div class="sponsored-content-color">
                             <article class="article-news">
@@ -341,8 +341,8 @@
                     <iframe src="https://placehold.co/300x600?text=ADD" width="300" height="600" title="3rd party AD content" aria-label="Advertisement"></iframe>
                 </div>
                 <!-- Doge Watch -->
-                <section>
-                    <h4 class="blockTitle">DOGE WATCH</h4>
+                <section id="doge-watch">
+                    <h4 class="gradient-title">DOGE WATCH</h4>
                     <article class="article-news black-underline-link">
                         <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
                         <div><h6 class="m-0"><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h6></div>
@@ -357,8 +357,8 @@
                     </article>
                 </section>
                 <!-- Most Popular -->
-                <section>
-                    <h4 class="blockTitle">MOST POPULAR</h4>
+                <section id="most-popular">
+                    <h4 class="gradient-title">MOST POPULAR</h4>
                     <div>
                         <article class="most-popular">
                             <div><h6 class="m-0"><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h6></div>
@@ -382,17 +382,17 @@
                     <iframe src="https://placehold.co/300x600?text=ADD" width="300" height="600" title="3rd party AD content" aria-label="Advertisement"></iframe>
                 </div>
                 <!-- Play Sudoku -->
-                <section>
-                    <h4 class="blockTitle">PLAY SUDOKU</h4>
-                    <a href="https://example.com"><img src="https://placehold.co/300x250?text=Play+Daily+Online+Sudoku" title="Play Sudoku Online" alt="sudoku-figure"></a>
+                <section id="play-sudoku">
+                    <h4 class="gradient-title">PLAY SUDOKU</h4>
+                    <div class="align-content-center align-items-center text-center"><a href="https://example.com"><img src="https://placehold.co/300x250?text=Play+Daily+Online+Sudoku" title="Play Sudoku Online" alt="sudoku-figure"></a></div>
                 </section>
                 <!-- add -->
                 <div class="add-space">
                     <iframe src="https://placehold.co/300x600?text=ADD" width="300" height="600" title="3rd party AD content" aria-label="Advertisement"></iframe>
                 </div>
                 <!-- SpotLight -->
-                <section>
-                    <h4 class="blockTitle">SPOTLIGHT</h4>
+                <section id="spotlight">
+                    <h4 class="gradient-title">SPOTLIGHT</h4>
                     <article class="article-news black-underline-link">
                         <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
                         <div><h6 class="m-0"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h6></div>
@@ -415,21 +415,39 @@
             <!-- Central Colum (always visibile) -->
             <div class="col-12 col-lg-6 col-md-8 order-md-1 order-lg-2 central-colum-border">
                 <!-- Big Article -->
-                <section>
+                <section id="front-article">
                     <article class="article-news">
-                        <div>
-                            <div class="d-none d-md-block"><h2><a href="http://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></h2></div>
+                        <div class="d-none d-md-block">
+                            <h2><a href="http://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></h2>
                             <img src="https://placehold.co/1150x670" class="img-fluid" alt="photo">
-                            <div class="d-none d-md-block">
+                            <div>
                                 <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
                                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                             </div>
                         </div>
                     </article>
+                    <!-- Article visible only on mobile-->
+                    <article class="d-flex d-md-none mobile-article">
+                        <div class="text-article">
+                            <h2><a href="http://example.com"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h2>
+                            <div class="meta-article">
+                                <span> By <a href="http://example.com">Lorem ipsum</a> -The Washington Times</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Article visible only on mobile-->
+                    <article class="d-flex d-md-none mobile-article">
+                        <div class="text-article">
+                            <h2><a href="http://example.com"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h2>
+                            <div class="meta-article">
+                                <span> By <a href="http://example.com">Lorem ipsum</a> -The Washington Times</span>
+                            </div>
+                        </div>
+                    </article>
                 </section>
                 <!-- 3 Small Article -->
-                <section>
-                    <hr>
+                <section id="other-articles">
+                    <hr class="thin-line">
                     <article class="article-news">
                         <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
                         <div>
@@ -437,7 +455,7 @@
                             <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
                         </div>
                     </article>
-                    <hr>
+                    <hr class="thin-line">
                     <article class="article-news">
                         <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
                         <div>
@@ -445,7 +463,7 @@
                             <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
                         </div>
                     </article>
-                    <hr>
+                    <hr class="thin-line">
                     <article class="article-news">
                         <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
                         <div>
@@ -454,51 +472,774 @@
                         </div>
                     </article>
                 </section>
-                <!-- My Times (4 article grid) -->
-                <section></section>
-                <!-- Video (4 article grid) -->
-                <section></section>
-                <!-- Culture (4 article list) -->
-                <section></section>
+                <!-- My Times -->
+                <section id="my-times">
+                    <div class="row">
+                        <div class="section-title">
+                            <div class="section-title-space">
+                                <h3><a class="section-header-red" href="http://example.com">MY</a><a class="section-header-black" href="http://example.com">TIMES</a></h3>
+                                <div><a href="https://example.com" class="arrow-link"><i>VIEW ALL<i class="fa fa-arrow-right"></i></i></a></div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="col">
+                            <article class="article-news black-underline-link">
+                                <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
+                                <div><h6 class="m-0"><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h6></div>
+                            </article>
+                            <article class="article-news black-underline-link">
+                                <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
+                                <div>
+                                    <h6 class="m-0"><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h6>
+                                    <span class="commentary-box">COMMENTARY</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="article-news black-underline-link">
+                                <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
+                                <div><h6 class="m-0"><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h6></div>
+                            </article>
+                            <article class="article-news black-underline-link">
+                                <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
+                                <div>
+                                    <h6 class="m-0"><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h6>
+                                    <span class="commentary-box">COMMENTARY</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <!-- Video -->
+                <section id="video">
+                    <div class="row">
+                        <div class="section-title">
+                            <div class="section-title-space">
+                                <h3><a class="section-header-red" href="http://example.com">VIDEO</a></h3>
+                                <div><a href="https://example.com" class="arrow-link"><i>VIEW ALL<i class="fa fa-arrow-right"></i></i></a></div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="col">
+                            <article class="article-news black-underline-link">
+                                <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
+                                <div>
+                                    <h6 class="m-0"><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h6>
+                                    <span class="video-box">VIDEO</span>
+                                </div>
+                            </article>
+                            <article class="article-news black-underline-link">
+                                <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
+                                <div>
+                                    <h6 class="m-0"><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h6>
+                                    <span class="video-box">VIDEO</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="article-news black-underline-link">
+                                <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
+                                <div>
+                                    <h6 class="m-0"><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h6>
+                                    <span class="video-box">VIDEO</span>
+                                </div>
+                            </article>
+                            <article class="article-news black-underline-link">
+                                <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
+                                <div>
+                                    <h6 class="m-0"><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h6>
+                                    <span class="video-box">VIDEO</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <!-- Commentary visible only on mobile -->
+                <section id="commentary-mobile"></section>
+                <!-- Culture -->
+                <section id="culture">
+                    <div class="section-title">
+                        <div class="section-title-space">
+                            <h3><a class="section-header-red" href="http://example.com">CULTURE</a></h3>
+                            <div><a href="https://example.com" class="arrow-link"><i>VIEW ALL<i class="fa fa-arrow-right"></i></i></a></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <article class="article-news more-important-article">
+                            <div><a href="https://example.com"><img src="https://placehold.co/166x97" alt="photo"></a></div>
+                            <div>
+                                <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                            </div>
+                        </article>
+                        <hr class="thin-line">
+                    </div>
+                    <!-- Article visible only on mobile-->
+                    <article class="d-flex d-md-none mobile-article mb-4">
+                        <div class="text-article">
+                            <h2><a href="http://example.com"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h2>
+                            <div class="meta-article">
+                                <span> By <a href="http://example.com">Lorem ipsum</a> -The Washington Times</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-news">
+                        <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                </section>
                 <!-- Threat Status (4 article list) -->
-                <section></section>
-                <!-- Trump Central (4 article list) -->
-                <section></section>
+                <section id="threat-status">
+                    <div class="threat-status">
+                        <div class="section-title">
+                            <div class="section-title-space">
+                                <h3><a href="http://example.com">THREAT</a><a href="http://example.com">STATUS</a></h3>
+                                <div><a href="https://example.com" class="arrow-link"><i>VIEW ALL<i class="fa fa-arrow-right"></i></i></a></div>
+                            </div>
+                            <hr class="color-blue-green">
+                        </div>
+                    </div>
+                    <div class="background-blue">
+                        <div class="d-none d-md-block">
+                            <article class="article-news more-important-article">
+                                <div><a href="https://example.com"><img src="https://placehold.co/166x97" alt="photo"></a></div>
+                                <div>
+                                    <span class="video-box">VIDEO</span>
+                                    <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                </div>
+                            </article>
+                            <hr class="thin-line">
+                        </div>
+                        <!-- Article visible only on mobile-->
+                        <article class="d-flex d-md-none mobile-article mb-4">
+                            <div class="text-article">
+                                <h2><a href="http://example.com"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h2>
+                                <div class="meta-article">
+                                    <span> By <a href="http://example.com">Lorem ipsum</a> -The Washington Times</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="article-news">
+                            <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                            <div>
+                                <span class="newsletter-box">NEWSLETTER</span>
+                                <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                            </div>
+                        </article>
+                        <hr class="thin-line">
+                        <article class="article-news">
+                            <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                            <div>
+                                <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                            </div>
+                        </article>
+                        <hr class="thin-line">
+                        <article class="article-news">
+                            <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                            <div>
+                                <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                            </div>
+                        </article>
+                    </div>
+
+                </section>
+                <!-- Trump Central -->
+                <section id="trump-central">
+                    <div class="section-title">
+                        <div class="section-title-space">
+                            <h3><a class="section-header-red" href="http://example.com">TRUMP CENTRAL</a></h3>
+                            <div><a href="https://example.com" class="arrow-link"><i>VIEW ALL<i class="fa fa-arrow-right"></i></i></a></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <article class="article-news more-important-article">
+                            <div><a href="https://example.com"><img src="https://placehold.co/166x97" alt="photo"></a></div>
+                            <div>
+                                <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                            </div>
+                        </article>
+                        <hr class="thin-line">
+                    </div>
+                    <!-- Article visible only on mobile-->
+                    <article class="d-flex d-md-none mobile-article mb-4">
+                        <div class="text-article">
+                            <h2><a href="http://example.com"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h2>
+                            <div class="meta-article">
+                                <span> By <a href="http://example.com">Lorem ipsum</a> -The Washington Times</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                </section>
                 <!-- Most Popular (4 text list, shows only on small screens) -->
-                <section class="d-none d-sm-block"></section>
-                <!-- Politics (4 article list) -->
-                <section></section>
-                <!-- Dive Deeper (4 article list) -->
-                <section></section>
-                <!-- National (4 article list) -->
-                <section></section>
-                <!-- World (4 article list) -->
-                <section></section>
-                <!-- Sports (4 article list) -->
-                <section></section>
-                <!-- Higher Ground (4 article list) -->
-                <section></section>
+                <section id="most-popular-mobile" class="d-none d-sm-block"></section>
+                <!-- Politics -->
+                <section id="politics">
+                    <div class="section-title">
+                        <div class="section-title-space">
+                            <h3><a class="section-header-red" href="http://example.com">POLITICS</a></h3>
+                            <div><a href="https://example.com" class="arrow-link"><i>VIEW ALL<i class="fa fa-arrow-right"></i></i></a></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <article class="article-news more-important-article">
+                            <div><a href="https://example.com"><img src="https://placehold.co/166x97" alt="photo"></a></div>
+                            <div>
+                                <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                            </div>
+                        </article>
+                        <hr class="thin-line">
+                    </div>
+                    <!-- Article visible only on mobile-->
+                    <article class="d-flex d-md-none mobile-article mb-4">
+                        <div class="text-article">
+                            <h2><a href="http://example.com"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h2>
+                            <div class="meta-article">
+                                <span> By <a href="http://example.com">Lorem ipsum</a> -The Washington Times</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                </section>
+                <!-- Dive Deeper -->
+                <section id="dive-deeper">
+                    <div class="section-title">
+                        <div class="section-title-space">
+                            <h3><a class="section-header-red" href="http://example.com">DIVE DEEPER</a></h3>
+                            <div><a href="https://example.com" class="arrow-link"><i>VIEW ALL<i class="fa fa-arrow-right"></i></i></a></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <article class="article-news more-important-article">
+                            <div><a href="https://example.com"><img src="https://placehold.co/166x97" alt="photo"></a></div>
+                            <div>
+                                <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                            </div>
+                        </article>
+                        <hr class="thin-line">
+                    </div>
+                    <!-- Article visible only on mobile-->
+                    <article class="d-flex d-md-none mobile-article mb-4">
+                        <div class="text-article">
+                            <h2><a href="http://example.com"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h2>
+                            <div class="meta-article">
+                                <span> By <a href="http://example.com">Lorem ipsum</a> -The Washington Times</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <span class="video-box">VIDEO</span>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <span class="video-box">VIDEO</span>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                </section>
+                <!-- National -->
+                <section id="national">
+                    <div class="section-title">
+                        <div class="section-title-space">
+                            <h3><a class="section-header-red" href="http://example.com">NATIONAL</a></h3>
+                            <div><a href="https://example.com" class="arrow-link"><i>VIEW ALL<i class="fa fa-arrow-right"></i></i></a></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <article class="article-news more-important-article">
+                            <div><a href="https://example.com"><img src="https://placehold.co/166x97" alt="photo"></a></div>
+                            <div>
+                                <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                            </div>
+                        </article>
+                        <hr class="thin-line">
+                    </div>
+                    <!-- Article visible only on mobile-->
+                    <article class="d-flex d-md-none mobile-article mb-4">
+                        <div class="text-article">
+                            <h2><a href="http://example.com"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h2>
+                            <div class="meta-article">
+                                <span> By <a href="http://example.com">Lorem ipsum</a> -The Washington Times</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                </section>
+                <!-- World -->
+                <section id="world">
+                    <div class="section-title">
+                        <div class="section-title-space">
+                            <h3><a class="section-header-red" href="http://example.com">WORLD</a></h3>
+                            <div><a href="https://example.com" class="arrow-link"><i>VIEW ALL<i class="fa fa-arrow-right"></i></i></a></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <article class="article-news more-important-article">
+                            <div><a href="https://example.com"><img src="https://placehold.co/166x97" alt="photo"></a></div>
+                            <div>
+                                <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                            </div>
+                        </article>
+                        <hr class="thin-line">
+                    </div>
+                    <!-- Article visible only on mobile-->
+                    <article class="d-flex d-md-none mobile-article mb-4">
+                        <div class="text-article">
+                            <h2><a href="http://example.com"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h2>
+                            <div class="meta-article">
+                                <span> By <a href="http://example.com">Lorem ipsum</a> -The Washington Times</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                </section>
+                <!-- Sports -->
+                <section id="sports">
+                    <div class="section-title">
+                        <div class="section-title-space">
+                            <h3><a class="section-header-red" href="http://example.com">SPORTS</a></h3>
+                            <div><a href="https://example.com" class="arrow-link"><i>VIEW ALL<i class="fa fa-arrow-right"></i></i></a></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <article class="article-news more-important-article">
+                            <div><a href="https://example.com"><img src="https://placehold.co/166x97" alt="photo"></a></div>
+                            <div>
+                                <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                            </div>
+                        </article>
+                        <hr class="thin-line">
+                    </div>
+                    <!-- Article visible only on mobile-->
+                    <article class="d-flex d-md-none mobile-article mb-4">
+                        <div class="text-article">
+                            <h2><a href="http://example.com"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h2>
+                            <div class="meta-article">
+                                <span> By <a href="http://example.com">Lorem ipsum</a> -The Washington Times</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                </section>
+                <!-- Higher Ground -->
+                <section id="higher-ground">
+                    <div class="section-title">
+                        <div class="section-title-space">
+                            <h3><a class="section-header-red" href="http://example.com">HIGHER GROUND</a></h3>
+                            <div><a href="https://example.com" class="arrow-link"><i>VIEW ALL<i class="fa fa-arrow-right"></i></i></a></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <article class="article-news more-important-article">
+                            <div><a href="https://example.com"><img src="https://placehold.co/166x97" alt="photo"></a></div>
+                            <div>
+                                <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                            </div>
+                        </article>
+                        <hr class="thin-line">
+                    </div>
+                    <!-- Article visible only on mobile-->
+                    <article class="d-flex d-md-none mobile-article mb-4">
+                        <div class="text-article">
+                            <h2><a href="http://example.com"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h2>
+                            <div class="meta-article">
+                                <span> By <a href="http://example.com">Lorem ipsum</a> -The Washington Times</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                </section>
                 <!-- Podcast (4 article list) -->
-                <section></section>
+                <section id="podcast"></section>
                 <!-- Sponsored Content (4 article list) -->
-                <section></section>
-                <!-- More Stories (article list) -->
-                <section></section>
+                <section id="sponsored-content-central"></section>
+                <!-- More Stories -->
+                <section id="more-stories">
+                    <div class="section-title">
+                        <div class="section-title-space">
+                            <h3><a class="section-header-red" href="http://example.com">MORE STORIES</a></h3>
+                            <div><a href="https://example.com" class="arrow-link"><i>VIEW ALL<i class="fa fa-arrow-right"></i></i></a></div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <article class="article-news more-important-article">
+                            <div><a href="https://example.com"><img src="https://placehold.co/166x97" alt="photo"></a></div>
+                            <div>
+                                <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                                <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                            </div>
+                        </article>
+                        <hr class="thin-line">
+                    </div>
+                    <!-- Article visible only on mobile-->
+                    <article class="d-flex d-md-none mobile-article mb-4">
+                        <div class="text-article">
+                            <h2><a href="http://example.com"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h2>
+                            <div class="meta-article">
+                                <span> By <a href="http://example.com">Lorem ipsum</a> -The Washington Times</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article><hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                    <hr class="thin-line">
+                    <article class="article-news">
+                        <div><a href="https://example.com"><img src="https://placehold.co/85x85" alt="photo"></a></div>
+                        <div>
+                            <h4><a href="https://example.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
+                            <div class="blue-link"><span class="podcasthed">By <a href="http://example.com">Lorem Impus</a> -The Washington Times</span></div>
+                        </div>
+                    </article>
+                </section>
             </div>
 
             <!-- Right Colum (only visible in lg screens) -->
             <div class="col-12 col-lg-3 d-none d-lg-block order-3">
                 <!-- Follow Us/Video/Search Bar-->
-                <section class="align-items-center align-content-center">
+                <section id="video-section" class="align-items-center align-content-center">
                     <div class="row">
                         <div class="col">
                             <span class="follow-us">Follow us</span>
                         </div>
                         <div class="col-auto">
-                            <a href="https://example.com" class="socialIcon"><i class="fa fa-facebook-official" id="facebook"></i></a>
-                            <a href="https://example.com" class="socialIcon"><i class="fa fa-twitter-square" id="twitter"></i></a>
-                            <a href="https://example.com" class="socialIcon"><i class="fa fa-instagram" id="instagram"></i></a>
-                            <a href="https://example.com" class="socialIcon"><i class="fa fa-rss-square" id="rss"></i></a>
+                            <a href="https://example.com" class="social-icon"><i class="fa fa-facebook-official" id="facebook"></i></a>
+                            <a href="https://example.com" class="social-icon"><i class="fa fa-twitter-square" id="twitter"></i></a>
+                            <a href="https://example.com" class="social-icon"><i class="fa fa-instagram" id="instagram"></i></a>
+                            <a href="https://example.com" class="social-icon"><i class="fa fa-rss-square" id="rss"></i></a>
                         </div>
                     </div>
                     <div class="input-group m-3">
@@ -519,8 +1260,8 @@
                     </div>
                 </section>
                 <!-- Commentary -->
-                <section>
-                    <h4 class="blockTitle">COMMENTARY</h4>
+                <section id="commentary">
+                    <h4 class="gradient-title">COMMENTARY</h4>
                     <div class="mb-3 gap-3">
                         <article class="article-news">
                             <div><a href="https://example.com"> <img src="https://placehold.co/85x119" alt="photo"></a></div>
@@ -542,7 +1283,7 @@
                     </div>
                 </section>
                 <!-- Sponsored content-->
-                <section>
+                <section id="sponsored-content-right">
                     <span class="sponsored-content">SPONSORED CONTENT</span>
                     <div class="sponsored-content-color">
                         <article class="article-news">
@@ -556,8 +1297,8 @@
                     <iframe src="https://placehold.co/300x600?text=ADD" width="300" height="600" title="3rd party AD content" aria-label="Advertisement"></iframe>
                 </div>
                 <!-- Rapid Reaction-->
-                <section>
-                    <h4 class="blockTitle">RAPID REACTION</h4>
+                <section id="rapid-reaction">
+                    <h4 class="gradient-title">RAPID REACTION</h4>
                     <div class="mb-3 gap-3">
                         <article class="article-news black-link">
                             <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
@@ -580,8 +1321,8 @@
                     </div>
                 </section>
                 <!-- Commentary -->
-                <section>
-                    <h4 class="blockTitle">COMMENTARY</h4>
+                <section id="commentary-post">
+                    <h4 class="gradient-title">COMMENTARY</h4>
                     <div class="mb-3 gap-3">
                         <article class="article-news black-link">
                             <div><a href="https://example.com"> <img src="https://placehold.co/85x85" alt="photo"></a></div>
@@ -625,17 +1366,17 @@
                     <iframe src="https://placehold.co/300x250?text=ADD" width="300" height="250" title="3rd party AD content" aria-label="Advertisement"></iframe>
                 </div>
                 <!-- Latest Cartoon -->
-                <section>
-                    <h4 class="blockTitle">LATEST CARTOON</h4>
-                    <a href="#"><img src="https://placehold.co/300x250?text=Latest+Cartoon" title="Latest Cartoon" alt="latest-cartoon-figure"></a>
+                <section id="latest-cartoon">
+                    <h4 class="gradient-title">LATEST CARTOON</h4>
+                    <div class="align-content-center align-items-center text-center"><a href="#"><img src="https://placehold.co/300x250?text=Latest+Cartoon" title="Latest Cartoon" alt="latest-cartoon-figure"></a></div>
                 </section>
                 <!-- add -->
                 <div class="add-space">
                     <iframe src="https://placehold.co/300x600?text=ADD" width="300" height="600" title="3rd party AD content" aria-label="Advertisement"></iframe>
                 </div>
                 <!-- Today's Paper -->
-                <section>
-                    <h4 class="blockTitle">TODAY'S PAPER</h4>
+                <section id="totays-paper">
+                    <h4 class="gradient-title">TODAY'S PAPER</h4>
                     <article class="article-news">
                         <div><a href="https://example.com"> <img src="https://placehold.co/85x130" alt="photo"></a></div>
                         <div>
@@ -649,8 +1390,8 @@
                     </div>
                 </section>
                 <!-- Front Page Podcast -->
-                <section>
-                    <h4 class="blockTitle">FRONT PAGE PODCAST</h4>
+                <section id="front-page-podcast">
+                    <h4 class="gradient-title">FRONT PAGE PODCAST</h4>
                     <img src="https://placehold.co/1200x700?text=AUDIO+SPACE" class="img-fluid " alt="audio">
                     <ul class="list-unstyled">
                         <li><audio controls><source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"></audio></li>
