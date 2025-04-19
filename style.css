@@ -208,7 +208,7 @@ a, .article-headline{
     text-align: center;
     margin-top: 8px;
     font-size: 13px;
-    font-family: Arial, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .topic>*{
     display: inline;
@@ -294,7 +294,7 @@ a, .article-headline{
     text-decoration: underline;
 }
 .sponsored-content{
-    font-family: Arial, serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #a8091f;
     font-size: 14px;
     font-weight: bold;
@@ -319,7 +319,7 @@ a, .article-headline{
      font-weight: bold;
      color: white;
      background-color: #a9091f;
-     font-family: Arial, serif;
+     font-family: Arial, Helvetica, sans-serif;
      padding: 2px;
      font-size: 10px;
  }
@@ -333,7 +333,7 @@ a, .article-headline{
     color: white;
     padding: 2px;
     font-size: 10px;
-    font-family: Arial, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 .commentary-box{
@@ -341,7 +341,7 @@ a, .article-headline{
     color: white;
     padding: 2px;
     font-size: 10px;
-    font-family: Arial, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 .span-commentary{
@@ -369,7 +369,7 @@ a, .article-headline{
 .section-title{
     margin-top: 20px;
     margin-bottom: 16px;
-    font-family: Arial, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 .section-title hr{
@@ -474,11 +474,34 @@ section.input-group-text:active {
 /* STOP ARTICLE VISIBLE ON MOBILE CSS */
 
 /* ADD CSS */
-.add-space{
+.front-add-space{
     margin-top: 15px;
     align-content: center;
     text-align: center;
     margin-bottom: 25px;
+    padding: 5px;
+}
+.add-space{
+    margin-top: 15px;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 2; /* 300:600 => 1:2 */
+}
+.add-space iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+@media (max-width: 992px){
+    .smaller-add-space{
+        max-width: 800px; !important; /* smaller ad on md screens */
+        max-height: 600px; !important;
+    }
 }
 /* STOP ADD CSS */
 
@@ -506,5 +529,51 @@ section.input-group-text:active {
     }
 }
 /* STOP PADDING AND MARGING DIRECTIVES FOR LARGER SCREENS */
-
 /* STOP MAIN PAGE CSS */
+
+/* PRE-FOOTER */
+.five-wide-auto-grid {
+    display: grid;
+    grid-gap: 40px 16px;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    margin-top: 32px;
+}
+.pre-footer-title{
+    height: 50px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.rounded-image {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.pre-footer-article h3{
+    color:black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pre-footer-article h4 a{
+    color: #2e2e2e;
+    font-weight: lighter;
+    font-size: 16px;
+ }
+.pre-footer-article h3:hover, .pre-footer-article h4:hover{
+    text-decoration: underline;
+    text-decoration-color:black;
+    text-decoration-thickness: 1px;
+}
+.lead-article{
+    border-bottom: 1px solid #ededed;
+    margin-top: 8px; !important;
+    margin-bottom: 10px; !important;
+}
+.lead-article h4 a{
+    font-weight: bolder; !important;
+    color: black; !important;
+}
+/* STOP PRE-FOOTER */
