@@ -3,6 +3,7 @@ body{
     font-weight: 400;
     color:black;
 }
+
 /* CSS HEADER */
 .logo{
     text-align: center;
@@ -79,7 +80,6 @@ a, .btn-link{
 .nav-link:hover, .nav-link:focus, .nav-link:active{
     color: white;
 }
-
 .white-icon{
     color: white;
     font-size: 36px;
@@ -273,6 +273,10 @@ a, .article-headline{
 .central-colum-border{
     border-left: 1px solid #ededed;
     border-right: 1px solid #ededed;
+}
+.sticky-colum-left, .sticky-colum-right {
+    position: sticky;
+    top: 70px;
 }
 .article-news{
     margin-bottom: 16px;
