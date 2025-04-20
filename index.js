@@ -12,3 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+window.addEventListener('scroll', function() {
+    var navbarItems = document.querySelectorAll('.show-on-scroll');
+    navbarItems.forEach(function(item) {
+        if (window.scrollY > 100) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+});

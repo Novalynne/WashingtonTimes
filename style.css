@@ -59,7 +59,7 @@ a, .btn-link{
 /* NAVIGATIONAL BAR CSS */
 .nav-color{
     background-color: #a9091f !important;
-    height: 50px;
+    height: 60px;
 }
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
@@ -79,13 +79,26 @@ a, .btn-link{
 .nav-link:hover, .nav-link:focus, .nav-link:active{
     color: white;
 }
-.fa-user-circle-o{
+
+.white-icon{
     color: white;
-    font-size: 36px; /*TODO: figure out why this is not applied on Font Awesom Icon*/
+    font-size: 36px;
 }
-.fa-bars{
+.white-icon-smaller{
     color: white;
-    font-size: 24px;
+    font-size: 30px;
+}
+.show-on-scroll{
+    display: none;
+}
+.show-on-scroll .btn-link{
+    background-color: white;
+}
+.show-on-scroll .btn-link:hover{
+    color: gray;
+}
+.show-on-scroll .btn-primary:hover{
+    background-color: black;
 }
 /* STOP NAVIGATIONAL BAR CSS */
 

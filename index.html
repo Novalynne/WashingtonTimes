@@ -27,8 +27,8 @@
                 <button type="button" class="Icon">
                     <i class="fa fa-envelope" id="emailIcon"></i>
                 </button>
-                <button type="button" class="btn btn-primary">Subscribe</button>
-                <button type="button" class="btn btn-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sign in</button>
+                <button type="button" id="subscribe-button" class="btn btn-primary">Subscribe</button>
+                <button type="button" id="sign-in-button" class="btn btn-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sign in</button>
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
 <nav id="navigational-bar" class="navbar navbar-expand-md nav-color sticky-top">
     <div class="container-fluid">
         <!-- Hamburger button for small devices -->
-        <button class="btn d-flex d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
+        <button class="btn d-flex d-md-none white-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
             <i class="fa fa-bars"></i>
         </button>
 
@@ -45,7 +45,7 @@
         <span class="navbar-brand mx-auto d-md-none text-white">The Washington Times</span>
 
         <!-- Account Icon -->
-        <button class="btn d-flex d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <button class="btn d-flex d-md-none white-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
             <i class="fa fa-user-circle-o"></i>
         </button>
 
@@ -116,6 +116,16 @@
                             <li><a class="dropdown-item" href="https://example.com">Other Stuff</a></li>
                             <li><a class="dropdown-item" href="https://example.com">Other magical Stuff</a></li>
                         </ul>
+                    </li>
+                    <!-- Button only visible when windows scrolls -->
+                    <li class="nav-item show-on-scroll">
+                        <a href="https://example.com" class="white-icon-smaller"><i class="fa fa-envelope"></i></a>
+                    </li>
+                    <li class="nav-item show-on-scroll">
+                        <button type="button" class="btn btn-primary">Subscribe</button>
+                    </li>
+                    <li class="nav-item show-on-scroll">
+                        <button class="btn btn-link"> Sign in</button>
                     </li>
                 </ul>
             </div>
@@ -308,7 +318,7 @@
     <div class="container-fluid px-lg-custom px-md-4 px-sm-3 px-2">
         <div class="row">
             <!-- Left Colum (visible on the right side of the screen when the dimention is md) -->
-            <div class="col-12 col-lg-3 col-md-4 order-md-2 order-lg-1 d-none d-md-block bottom-border">
+            <div id="left-colum" class="col-12 col-lg-3 col-md-4 order-md-2 order-lg-1 d-none d-md-block bottom-border">
                 <aside>
                     <!-- News And Sponsored Content -->
                     <section id="newsletter">
@@ -420,7 +430,7 @@
             </div>
 
             <!-- Central Colum (always visibile) -->
-            <div class="col-12 col-lg-6 col-md-8 order-md-1 order-lg-2 central-colum-border bottom-border">
+            <div id="central-colum" class="col-12 col-lg-6 col-md-8 order-md-1 order-lg-2 central-colum-border bottom-border">
                 <aside>
                     <!-- Big Article -->
                     <section id="front-article">
@@ -1409,7 +1419,7 @@
             </div>
 
             <!-- Right Colum (visible on the bottom side of the screen when the dimention is md) -->
-            <div class="col-12 col-lg-3 col-md-12 d-none d-md-block order-md-3 order-lg-3 bottom-border">
+            <div id="right-colum" class="col-12 col-lg-3 col-md-12 d-none d-md-block order-md-3 order-lg-3 bottom-border">
                 <aside>
                     <!-- Follow Us/Video/Search Bar-->
                     <section id="video-section" class="align-items-center align-content-center">
