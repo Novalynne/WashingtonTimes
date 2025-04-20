@@ -59,6 +59,7 @@ a, .btn-link{
 /* NAVIGATIONAL BAR CSS */
 .nav-color{
     background-color: #a9091f !important;
+    height: 50px;
 }
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
@@ -184,6 +185,26 @@ a, .btn-link{
 .podcast{
     background-color: #ededed;
 }
+.news-alert{
+    background-color: #434343 !important;
+    display: flex;
+    align-items: baseline;
+    gap: 50px;
+    padding: 10px;
+    justify-content: center;
+}
+.news-alert h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    border-right: black solid !important;
+    border-width: 1px;
+    padding-right: 30px;
+}
+.news-alert h2{
+    color: white;
+    font-weight: bold;
+}
 a, .article-headline{
     color: black;
     font-weight: bold;
@@ -274,6 +295,7 @@ a, .article-headline{
 .black-underline-link a:hover{
     text-decoration: underline;
     color:black !important;
+    text-decoration-thickness: 1px !important;
 }
 .black-link a:hover{
     color:black !important;
@@ -577,3 +599,50 @@ section.input-group-text:active {
     color: black; !important;
 }
 /* STOP PRE-FOOTER */
+
+/* FOOTER */
+.footer-article h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #a8091f;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.footer-background{
+    background-color: #e6e8eb;
+    margin-top: 15px;
+}
+.footer-article a{
+    color: #2e2e2e;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.footer-title h3 a{
+    color: #a9091f; !important;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer-title h3 a:hover, .footer-topic-element a:hover{
+    text-decoration: underline;
+    text-decoration-color: #a9091f;
+    text-decoration-thickness: 1px;
+    color: #a9091f; !important;
+}
+.footer-topic{
+    text-align: center;
+    margin-top: 8px;
+    font-size: 18px;
+}
+.footer-topic>*{
+    display: inline;
+}
+.footer-topic-element a{
+    padding: 0 5px;
+    color: #a9091f;
+    font-size:18px;
+    font-weight: bold
+}
+.topic-end-lines{
+    border-left: 2px solid #7e7e7e;
+    padding: 0 5px;
+}
+/* STOP FOOTER */
