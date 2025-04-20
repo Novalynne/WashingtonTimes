@@ -60,7 +60,7 @@ a, .btn-link{
 /* NAVIGATIONAL BAR CSS */
 .nav-color{
     background-color: #a9091f !important;
-    height: 60px;
+    height: 50px;
 }
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
@@ -201,10 +201,11 @@ a, .btn-link{
 .news-alert{
     background-color: #434343 !important;
     display: flex;
-    align-items: baseline;
+    align-items: baseline; !important;
     gap: 50px;
     padding: 10px;
     justify-content: center;
+    height: 45px;
 }
 .news-alert h3{
     font-family: Arial, Helvetica, sans-serif;
@@ -213,10 +214,12 @@ a, .btn-link{
     border-right: black solid !important;
     border-width: 1px;
     padding-right: 30px;
+    font-size: 25px;
 }
 .news-alert h2{
     color: white;
     font-weight: bold;
+    font-size: 25px;
 }
 a, .article-headline{
     color: black;
