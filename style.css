@@ -2,6 +2,7 @@ body{
     font-family: Literata, serif;
     font-weight: 400;
     color:black;
+    overflow: visible;
 }
 
 /* CSS HEADER */
@@ -272,9 +273,12 @@ a, .article-headline{
     border-left: 1px solid #ededed;
     border-right: 1px solid #ededed;
 }
-.sticky-colum-left, .sticky-colum-right {
-    position: sticky;
-    top: 70px;
+@media only screen and (min-width: 800px) {
+    .sticky-colum-left, .sticky-colum-right {
+        position: sticky; !important;
+        top: 70px; !important;
+        z-index: 10;  !important;
+    }
 }
 .article-news{
     margin-bottom: 16px;
