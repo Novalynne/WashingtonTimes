@@ -61,7 +61,7 @@ a, .btn-link{
 /* NAVIGATIONAL BAR CSS */
 .nav-color{
     background-color: #a9091f !important;
-    height: 50px;
+    height: 60px;
 }
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
