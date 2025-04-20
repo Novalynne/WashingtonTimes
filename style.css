@@ -150,11 +150,6 @@ a, .btn-link{
 }
 
 /* SEARCH BAR CSS */
-.btn-close{
-    color: white; !important;
-    background-color: transparent; !important; /*TODO: figure out why this is not applied on close button*/
-    border: none; !important;
-}
 .form-control,
 .input-group-text {
     border-radius: 30px;
@@ -458,9 +453,6 @@ a, .article-headline{
 }
 
 /* SOCIALS ICONS CSS */
-.social-icon{
-    font-size: 25px; /*TODO: figure out why this is not applied on Font Awesom Icon*/
-}
 #facebook, #instagram, #rss, #twitter{
     color: gray;
     font-size: 30px;
@@ -478,14 +470,6 @@ a, .article-headline{
     color: #0dcaf0;
 }
 /* STOP SOCIALS ICONS CSS */
-
-section.form-control:focus,
-section.input-group-text:focus, /*TODO: figure out why this is not applied*/
-section.form-control:active,
-section.input-group-text:active {
-    box-shadow: none;
-    border-color: #a9091f; !important;
-}
 
 /* ARTICLE VISIBLE ON MOBILE CSS */
 .mobile-article {
