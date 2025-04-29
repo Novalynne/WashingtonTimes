@@ -190,11 +190,72 @@ a, .btn-link{
 /* STOP SEARCH BAR CSS */
 /* STOP OFF CANVAS LEFT AND RIGHT CSS */
 
+/* ALERT SUBSCRIPTION CSS */
+.modal-header {
+    background-color: #052942;
+    color: white;
+    font-size: 25px;
+}
+.modal-header button{
+    font-size: 20px;
+}
+.modal-body{
+    background-color: white;
+    align-content: center;
+    text-align: center;
+    color: #515558;
+    padding: 30px;
+    margin-top: 10px ;
+}
+.modal-body p:last-of-type {
+    font-family: Arial, Helvetica, serif;
+    font-size: 16px;
+}
+.modal-body div{
+    text-align: center;
+    justify-content: center;
+}
+.modal-body button{
+    background-color: #c80227;
+    color: white;
+    font-family: Arial, Helvetica, serif;
+    border: none;
+}
+.modal-body button:hover{
+    background-color: #b53c4e;
+}
+.modal-message{
+    font-size: 35px;
+    font-weight: bolder;
+}
+.modal-footer{
+    text-align: center;
+    align-content: center;
+    display: block;
+    color: #d6d8dc;
+    font-family: Arial, Helvetica, serif;
+    border: none;
+    margin-bottom: 30px;
+}
+.modal-footer button{
+    background-color: transparent;
+    color: #2e2e2e;
+    text-decoration: underline;
+    text-decoration-color: #2e2e2e;
+    text-decoration-thickness: 1px;
+    border: none;
+}
+.model-footer button:hover{
+    color: #454545;
+    text-decoration-color: #454545;
+}
+/* STOP ALERT SUBSCRIPTION CSS */
+
 /* NEWS ANTEPRIMA */
 .podcast{
     background-color: #ededed;
 }
-.news-alert{
+.news-anteprima{
     background-color: #434343 !important;
     display: flex;
     align-items: baseline; !important;
@@ -203,7 +264,7 @@ a, .btn-link{
     justify-content: center;
     height: 45px;
 }
-.news-alert h3{
+.news-anteprima h3{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-weight: bold;
@@ -212,7 +273,7 @@ a, .btn-link{
     padding-right: 30px;
     font-size: 25px;
 }
-.news-alert h2{
+.news-anteprima h2{
     color: white;
     font-weight: bold;
     font-size: 25px;
@@ -277,7 +338,7 @@ a, .article-headline{
     .sticky-colum-left, .sticky-colum-right {
         position: sticky; !important;
         top: 70px; !important;
-        z-index: 10;  !important;
+        z-index: 1;  !important;
     }
 }
 .article-news{
@@ -512,11 +573,10 @@ a, .article-headline{
     padding: 5px;
 }
 .add-space{
-    margin-top: 15px;
     align-content: center;
     text-align: center;
     align-items: center;
-    margin-bottom: 25px;
+    margin: 15px auto 25px;
     position: relative;
     width: 100%;
     max-width: 300px;

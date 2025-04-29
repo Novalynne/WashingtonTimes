@@ -24,11 +24,11 @@
                 </div>
             </div>
             <div class="col-md-4 text-end"> <!-- Subscribe Zone -->
-                <button type="button" class="Icon">
+                <button type="button" class="Icon" data-bs-toggle="modal" data-bs-target="#alert-subscription">
                     <i class="fa fa-envelope" id="emailIcon"></i>
                 </button>
-                <button type="button" id="subscribe-button" class="btn btn-primary">Subscribe</button>
-                <button type="button" id="sign-in-button" class="btn btn-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sign in</button>
+                <button type="button" class="btn btn-primary">Subscribe</button>
+                <button type="button" class="btn btn-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-right" aria-controls="offcanvas-right">Sign in</button>
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
 <nav id="navigational-bar" class="navbar navbar-expand-md nav-color sticky-top">
     <div class="container-fluid">
         <!-- Hamburger button for small devices -->
-        <button class="btn d-flex d-md-none white-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
+        <button class="btn d-flex d-md-none white-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-left" aria-controls="offcanvas-left">
             <i class="fa fa-bars"></i>
         </button>
 
@@ -45,7 +45,7 @@
         <span class="navbar-brand mx-auto d-md-none text-white">The Washington Times</span>
 
         <!-- Account Icon -->
-        <button class="btn d-flex d-md-none white-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <button class="btn d-flex d-md-none white-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-right" aria-controls="offcanvas-right">
             <i class="fa fa-user-circle-o"></i>
         </button>
 
@@ -133,9 +133,8 @@
     </div>
 </nav>
 
-<!-- Navigational bar for small/mobile screens -->
 <!-- Offcanvas Left (Hamburger) -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-left" aria-labelledby="offcanvas-left-label" aria-hidden="true">
     <div class="offcanvas-header">
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         <div class="input-group m-3">
@@ -232,7 +231,7 @@
 </div>
 
 <!-- Offcanvas Right (Account) -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-right" aria-labelledby="offcanvas-right-label" aria-hidden="true">
     <div class="offcanvas-header">
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
@@ -249,9 +248,36 @@
     </div>
 </div>
 
+<!-- Alert Subscription -->
+<div class="modal fade" tabindex="-1" id="alert-subscription" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="alert-subscription-label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p>The Washington Times</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="sponsored-content">NEWS ALERT</p>
+                <p class="modal-message">Get coverage of the hot-button issues as news happens, delivered straight to your inbox.</p>
+                <p>Sign up for news alerts.</p>
+                <div class="gap-3 d-flex">
+                    <label>
+                        <input type="text" class="form-control" placeholder="Enter your email address">
+                    </label>
+                    <button type="button">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p>You may unsubscribe anytime.</p>
+                <button type="button" data-bs-dismiss="modal">No, thank you</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- News Alert -->
 <div class="d-none d-md-block">
-    <div class="container-fluid news-alert">
+    <div class="container-fluid news-anteprima">
         <h3>WATCH</h3>
         <h2>Washington Times Weekly: Lorem ipsum dolor sit amet.</h2>
     </div>
@@ -353,7 +379,7 @@
                         </div>
                     </section>
                     <!-- add -->
-                    <div class="add-space mx-auto">
+                    <div class="add-space">
                         <iframe src="https://www.example.com" title="3rd party AD content" aria-label="Advertisement"></iframe>
                     </div>
                     <!-- Doge Watch -->
@@ -394,7 +420,7 @@
                         </div>
                     </section>
                     <!-- add -->
-                    <div class="add-space mx-auto">
+                    <div class="add-space">
                         <iframe src="https://www.example.com" title="3rd party AD content" aria-label="Advertisement"></iframe>
                     </div>
                     <!-- Play Sudoku -->
@@ -403,7 +429,7 @@
                         <div class="align-content-center align-items-center text-center"><a href="https://example.com"><img src="https://placehold.co/300x250?text=Play+Daily+Online+Sudoku" class="img-fluid" title="Play Sudoku Online" alt="sudoku-figure"></a></div>
                     </section>
                     <!-- add -->
-                    <div class="add-space mx-auto">
+                    <div class="add-space">
                         <iframe src="https://www.example.com" title="3rd party AD content" aria-label="Advertisement"></iframe>
                     </div>
                     <!-- SpotLight -->
@@ -423,7 +449,7 @@
                         </article>
                     </section>
                     <!-- add -->
-                    <div class="add-space mx-auto sticky-colum-left"> <!-- TODO: fix sticky colum -->
+                    <div class="add-space sticky-colum-left"> <!-- TODO: fix sticky colum -->
                         <iframe src="https://www.example.com" title="3rd party AD content" aria-label="Advertisement"></iframe>
                     </div>
                 </aside>
@@ -1443,8 +1469,8 @@
                             </div>
                         </div>
                         <div class="w-100">
-                            <video class="img-fluid" controls>
-                                <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4">
+                            <video class="img-fluid" controls> <!-- video taken from https://pixabay.com/videos/keyboard-computer-writing-digital-232538/ -->
+                                <source src="https://cdn.pixabay.com/video/2024/09/21/232538_large.mp4">
                             </video>
                         </div>
                         <div class="text-end mb-5">
@@ -1485,7 +1511,7 @@
                         </div>
                     </section>
                     <!-- add -->
-                    <div class="add-space smaller-add-space mx-auto">
+                    <div class="add-space smaller-add-space">
                         <iframe src="https://www.example.com" title="3rd party AD content" aria-label="Advertisement"></iframe>
                     </div>
                     <!-- Rapid Reaction-->
@@ -1554,7 +1580,7 @@
                         </div>
                     </section>
                     <!-- add -->
-                    <div class="add-space smaller-add-space mx-auto">
+                    <div class="add-space smaller-add-space">
                         <iframe src="https://www.example.com" title="3rd party AD content" aria-label="Advertisement"></iframe>
                     </div>
                     <!-- Latest Cartoon -->
@@ -1563,7 +1589,7 @@
                         <div class="align-content-center align-items-center text-center"><a href="#"><img src="https://placehold.co/300x250?text=Latest+Cartoon" class="img-fluid" title="Latest Cartoon" alt="latest-cartoon-figure"></a></div>
                     </section>
                     <!-- add -->
-                    <div class="add-space smaller-add-space mx-auto">
+                    <div class="add-space smaller-add-space">
                         <iframe src="https://www.example.com" title="3rd party AD content" aria-label="Advertisement"></iframe>
                     </div>
                     <!-- Today's Paper -->
