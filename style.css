@@ -334,12 +334,10 @@ a, .article-headline{
     border-left: 1px solid #ededed;
     border-right: 1px solid #ededed;
 }
-@media only screen and (min-width: 800px) {
-    .sticky-colum-left, .sticky-colum-right {
-        position: sticky; !important;
-        top: 70px; !important;
-        z-index: 1;  !important;
-    }
+.sticky-section, .sticky-add-space {
+    position: sticky;
+    top: 70px;
+    z-index: 100;
 }
 .article-news{
     margin-bottom: 16px;
@@ -577,7 +575,6 @@ a, .article-headline{
     text-align: center;
     align-items: center;
     margin: 15px auto 25px;
-    position: relative;
     width: 100%;
     max-width: 300px;
     aspect-ratio: 1 / 2; /* 300:600 => 1:2 */
