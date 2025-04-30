@@ -651,25 +651,13 @@ a{
 /* STOP ADD CSS */
 
 /* PADDING AND MARGING DIRECTIVES FOR LARGER SCREENS */
-/* I had to create a custom one myself cause the px-lg-5 BootstraP gives you wasn't enough */
-@media (min-width: 992px) {
-    .px-lg-custom{
+/* I had to create a custom one myself cause the px-lg-5 BootstraP gives you wasn't enough for bigger screens */
+@media (min-width: 1400px) {
+    .px-lg-custom {
         padding-right: var(--bs-gutter-x, 0.75rem);
         padding-left: var(--bs-gutter-x, 0.75rem);
         margin-right: auto;
         margin-left: auto;
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .px-lg-custom {
-        max-width: 1140px;
-    }
-}
-
-@media (min-width: 1400px) {
-    .px-lg-custom {
         max-width: 1320px;
     }
 }

@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="col-md-4 text-end"> <!-- Subscribe Zone -->
-                <button type="button" class="Icon" data-bs-toggle="modal" data-bs-target="#alert-subscription">
+                <button type="button" class="Icon" data-bs-toggle="modal" data-bs-target="#alert-subscription" aria-label="subscribe">
                     <i class="fa fa-envelope" id="emailIcon"></i>
                 </button>
                 <button type="button" class="btn btn-primary">Subscribe</button>
@@ -41,7 +41,7 @@
 <nav id="navigational-bar" class="navbar navbar-expand-md nav-color sticky-top" aria-label="navigation-bar">
     <div class="container-fluid">
         <!-- Hamburger button for small devices -->
-        <button class="btn d-flex d-md-none white-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-left" aria-controls="offcanvas-left">
+        <button class="btn d-flex d-md-none white-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-left" aria-controls="offcanvas-left" aria-label="toggle-sidebar">
             <i class="fa fa-bars"></i>
         </button>
 
@@ -49,7 +49,7 @@
         <span class="navbar-brand mx-auto d-md-none text-white">The Washington Times</span>
 
         <!-- Account Icon -->
-        <button class="btn d-flex d-md-none white-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-right" aria-controls="offcanvas-right">
+        <button class="btn d-flex d-md-none white-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-right" aria-controls="offcanvas-right" aria-label="toggle-sidebar">
             <i class="fa fa-user-circle-o"></i>
         </button>
 
@@ -128,7 +128,7 @@
                     </li>
                     <!-- Button only visible when windows scrolls -->
                     <li class="nav-item show-on-scroll">
-                        <a href="https://example.com" class="white-icon-smaller"><i class="fa fa-envelope"></i></a>
+                        <a href="https://example.com" class="white-icon-smaller" aria-label="email"><i class="fa fa-envelope"></i></a>
                     </li>
                     <li class="nav-item show-on-scroll">
                         <button type="button" class="btn btn-primary">Subscribe</button>
@@ -149,7 +149,7 @@
         <div class="input-group m-3">
             <div class="input-wrapper">
                 <input type="text" class="form-control" placeholder="Search" aria-label="Search">
-                <button class="search-icon-btn" type="button">
+                <button class="search-icon-btn" type="button" aria-label="search-button">
                     <i class="fa fa-search" style="font-size: 24px"></i>
                 </button>
             </div>
@@ -289,9 +289,7 @@
                 <p class="modal-message">Get coverage of the hot-button issues as news happens, delivered straight to your inbox.</p>
                 <p>Sign up for news alerts.</p>
                 <div class="gap-3 d-flex">
-                    <label>
-                        <input type="text" class="form-control" placeholder="Enter your email address">
-                    </label>
+                    <input type="text" class="form-control w-75" placeholder="Enter your email address" aria-label="enter-email-address">
                     <button type="button">SUBSCRIBE</button>
                 </div>
             </div>
@@ -369,8 +367,9 @@
     </div>
 
     <!-- Main Body -->
-    <div class="container-fluid px-lg-custom px-md-4 px-sm-3 px-2" aria-label="home-colum">
+    <div class="container-fluid px-lg-custom px-lg-5 px-md-4 px-sm-3 px-2" aria-label="home-colum">
         <div class="row">
+
             <!-- Left Colum (visible on the right side of the screen when the dimention is md) -->
             <div id="left-colum" class="col-12 col-lg-3 col-md-4 order-md-2 order-lg-1 d-none d-md-block bottom-border" aria-label="right-colum">
                 <!-- News And Sponsored Content -->
@@ -1461,17 +1460,17 @@
                             <span class="follow-us">Follow us</span>
                         </div>
                         <div class="col-auto">
-                            <a href="https://example.com" class="social-icon"><i class="fa fa-facebook-official" id="facebook"></i></a>
-                            <a href="https://example.com" class="social-icon"><i class="fa fa-twitter-square" id="twitter"></i></a>
-                            <a href="https://example.com" class="social-icon"><i class="fa fa-instagram" id="instagram"></i></a>
-                            <a href="https://example.com" class="social-icon"><i class="fa fa-rss-square" id="rss"></i></a>
+                            <a href="https://example.com" class="social-icon" aria-label="facebook"><i class="fa fa-facebook-official" id="facebook"></i></a>
+                            <a href="https://example.com" class="social-icon" aria-label="twitter"><i class="fa fa-twitter-square" id="twitter"></i></a>
+                            <a href="https://example.com" class="social-icon" aria-label="instagram"><i class="fa fa-instagram" id="instagram"></i></a>
+                            <a href="https://example.com" class="social-icon" aria-label="rss"><i class="fa fa-rss-square" id="rss"></i></a>
                         </div>
                     </div>
                     <div class="input-group m-3">
                         <div class="input-wrapper">
                             <input type="text" class="form-control" placeholder="Search" aria-label="search">
-                            <button class="search-icon-btn" type="button">
-                                <i class="fa fa-search" style="font-size: 24px"></i> <!-- TODO: fix -->
+                            <button class="search-icon-btn" type="button" aria-label="search-button">
+                                <i class="fa fa-search" style="font-size: 24px"></i>
                             </button>
                         </div>
                     </div>
