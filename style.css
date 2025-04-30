@@ -33,7 +33,7 @@ h5{
     border-color: red;
 }
 a, .btn-link{
-    color: gray;
+    color: #555555;
     text-decoration: none;
 }
 .btn-link:focus, .btn-link:active{
@@ -330,7 +330,7 @@ a{
 .topic-element a{
     padding: 0 5px;
     border-left: 1px solid #222;
-    color: gray;
+    color: #555555;
     font-size:13px;
     font-weight: lighter;
 }
@@ -339,7 +339,7 @@ a{
 }
 .head-topic-element a{
     padding: 0 5px;
-    color: gray;
+    color: #555555;
     font-size:13px;
     font-weight: lighter;
 }
@@ -365,7 +365,7 @@ a{
     gap: 10px;
 }
 .article-news span, .big-article-news span, .news-anteprima-article span{
-    color: gray;
+    color: #555555;
     font-weight: normal;
 }
 .article-news img{
@@ -407,18 +407,18 @@ a{
     color:black
 }
 .arrow-link{
-    color: gray;
+    color: #555555;
     font-size:14px;
 }
 .arrow-link:hover{
     color: #a9091f;
 }
 .blue-link a{
-    color:cornflowerblue;
+    color: #4268c0;
     font-weight: normal;
 }
 .blue-link a:hover{
-    color: cornflowerblue;
+    color: #4268c0;
     text-decoration: underline;
 }
 .sponsored-content{
@@ -444,11 +444,11 @@ a{
     font-size: 20px;
 }
 .premium{
-     font-weight: bold !important;
+     font-weight: bolder !important;
      color: white !important;
      background-color: #a9091f;
      font-family: Arial, Helvetica, sans-serif;
-     padding: 2px;
+     padding: 4px;
      font-size: 10px;
  }
 .follow-us{
@@ -459,18 +459,26 @@ a{
 .video-box, .newsletter-box{
     background-color: black;
     color: white !important;
-    padding: 2px;
+    padding: 4px;
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold !important;
+    font-weight: bolder !important;
 }
 .commentary-box{
-    background-color: #7e7e7e;
+    background-color: #555555;
     color: white !important;
-    padding: 2px;
+    padding: 4px;
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold !important;
+    font-weight: bolder !important;
+}
+.exclusive-box{
+    background-color: #004898;
+    color: white !important;
+    padding: 4px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder !important;
 }
 .span-commentary span{
     border-bottom: 1px solid #ededed;
