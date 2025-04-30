@@ -24,9 +24,9 @@ h5{
     font-size: 16px;
 }
 .btn-primary:focus, .btn-primary:active{
-    background-color: red !important;
+    background-color: red;
     box-shadow: none;
-    border-color: red !important;
+    border-color: red;
 }
 .btn-primary:hover{
     background-color: red;
@@ -37,9 +37,9 @@ a, .btn-link{
     text-decoration: none;
 }
 .btn-link:focus, .btn-link:active{
-    color: red;!important;
+    color: red;
     box-shadow: none;
-    background-color: transparent;!important;
+    background-color: transparent;
 }
 .btn-link:hover{
     color: red;
@@ -105,13 +105,13 @@ a, .btn-link{
 
 /* OFF CANVAS LEFT AND RIGHT CSS */
 .offcanvas-body{
-    background: #a9091f !important;
+    background: #a9091f;
     color: white;
     margin-left: 20px;
     border-bottom: 1px solid white;
 }
 .offcanvas{
-    background: #a9091f !important;
+    background: #a9091f;
 }
 .btn-canvas{
     color: white;
@@ -256,9 +256,9 @@ a, .btn-link{
     background-color: #ededed;
 }
 .news-anteprima{
-    background-color: #434343 !important;
+    background-color: #434343;
     display: flex;
-    align-items: baseline; !important;
+    align-items: baseline;
     gap: 50px;
     padding: 10px;
     justify-content: center;
@@ -268,7 +268,7 @@ a, .btn-link{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-weight: bold;
-    border-right: black solid !important;
+    border-right: black solid;
     border-width: 1px;
     padding-right: 30px;
     font-size: 25px;
@@ -278,13 +278,13 @@ a, .btn-link{
     font-weight: bold;
     font-size: 25px;
 }
-a, .article-headline{
+a{
     color: black;
     font-weight: bold;
     font-size: 18px;
     margin: 0;
 }
-.podcasthed{
+.gray-text{
     color: gray;
     font-weight: normal;
 }
@@ -294,6 +294,26 @@ a, .article-headline{
 }
 .podcast-text{
     max-width: 300px;
+}
+.news-anteprima-article{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.news-anteprima-article h4{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+.news-anteprima-article h4 a{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+.news-anteprima-article img{
+    max-width: 70px;
+    max-height: 70px;
 }
 /* STOP NEWS ANTEPRIMA */
 
@@ -339,12 +359,20 @@ a, .article-headline{
     top: 70px;
     z-index: 100;
 }
-.article-news{
+.article-news, .big-article-news{
     margin-bottom: 16px;
     display: flex;
     gap: 10px;
 }
-.article-news h2 a {
+.article-news span, .big-article-news span, .news-anteprima-article span{
+    color: gray;
+    font-weight: normal;
+}
+.article-news img{
+    max-width: 85px;
+    max-height: 85px;
+}
+.article-news h2 a, .big-article-news h2 a{
     font-size: 30px;
 }
 .article-news h6 a {
@@ -354,43 +382,43 @@ a, .article-headline{
     font-size: 20px;
 }
 .more-important-article h4 a{
-     font-size: 25px; !important;
+     font-size: 25px;
 }
-.article-news p{
+.article-news p, .big-article-news p{
     font-size: 20px;
     color: #555555;
     margin-top: 5px;
     margin-bottom: 10px;
 }
-.article-news a{
+.article-news a, .big-article-news a{
     color: black;
     font-weight: bold;
     font-size: 16px;
 }
-.article-news a:hover{
+.article-news a:hover, .big-article-news a:hover{
     color: #a9091f;
 }
 .black-underline-link a:hover{
     text-decoration: underline;
-    color:black !important;
-    text-decoration-thickness: 1px !important;
+    color:black;
+    text-decoration-thickness: 1px;
 }
 .black-link a:hover{
-    color:black !important;
+    color:black
 }
 .arrow-link{
-    color: gray; !important;
+    color: gray;
     font-size:14px;
 }
 .arrow-link:hover{
     color: #a9091f;
 }
 .blue-link a{
-    color:cornflowerblue; !important;
+    color:cornflowerblue;
     font-weight: normal;
 }
 .blue-link a:hover{
-    color: cornflowerblue !important;
+    color: cornflowerblue;
     text-decoration: underline;
 }
 .sponsored-content{
@@ -402,7 +430,7 @@ a, .article-headline{
 .sponsored-content a{
     font-size: 20px;
 }
-.sponsored-content-color{
+.sponsored-content-background{
     background-color: #e6e8eb;
     padding: 10px;
 }
@@ -416,8 +444,8 @@ a, .article-headline{
     font-size: 20px;
 }
 .premium{
-     font-weight: bold;
-     color: white;
+     font-weight: bold !important;
+     color: white !important;
      background-color: #a9091f;
      font-family: Arial, Helvetica, sans-serif;
      padding: 2px;
@@ -430,30 +458,31 @@ a, .article-headline{
 }
 .video-box, .newsletter-box{
     background-color: black;
-    color: white;
+    color: white !important;
     padding: 2px;
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: bold !important;
 }
 .commentary-box{
     background-color: #7e7e7e;
-    color: white;
+    color: white !important;
     padding: 2px;
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: bold !important;
 }
-.span-commentary{
+.span-commentary span{
     border-bottom: 1px solid #ededed;
     font-weight: bold;
-    font-size: 18px; !important;
+    font-size: 18px;
+    color:black;
 }
 .text-white{
     font-weight: normal;
 }
 .color-blue-green{
-    color: #1f4360; !important;
+    color: #1f4360;
 }
 .background-blue{
     background-color: rgb(232, 238, 241);
@@ -465,6 +494,11 @@ a, .article-headline{
     font-weight: bold;
     align-items: center;
     align-content: center;
+}
+.play-sudoku-box, .latest-cartoon-box{
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 .section-title{
     margin-top: 20px;
@@ -534,6 +568,29 @@ a, .article-headline{
 }
 /* STOP SOCIALS ICONS CSS */
 
+/* IMAGE CSS */
+.image-box-70x70 img{
+    max-width: 70px;
+    max-height: 70px;
+}
+.image-box-85x85 img{
+    max-width: 85px;
+    max-height: 85px;
+}
+.image-box-85x119 img{
+    max-width: 85px;
+    max-height: 119px;
+}
+.image-box-166x97 img{
+    max-width: 166px;
+    max-height: 97px;
+}
+.image-box-85x130 img{
+    max-width: 85px;
+    max-height: 130px;
+}
+/* STOP IMAGE CSS */
+
 /* ARTICLE VISIBLE ON MOBILE CSS */
 .mobile-article {
     background-image: url(https://placehold.co/1200x670);
@@ -552,6 +609,7 @@ a, .article-headline{
 .text-article h2 a{
     color: white;
     font-weight: 700;
+    font-size: 30px;
 }
 .meta-article span, .meta-article span a{
     color: white;
@@ -586,8 +644,8 @@ a, .article-headline{
 }
 @media (max-width: 992px){
     .smaller-add-space{
-        max-width: 800px; !important; /* smaller ad on md screens */
-        max-height: 600px; !important;
+        max-width: 800px; /* smaller ad on md screens */
+        max-height: 600px;
     }
 }
 /* STOP ADD CSS */
@@ -656,12 +714,12 @@ a, .article-headline{
 }
 .lead-article{
     border-bottom: 1px solid #ededed;
-    margin-top: 8px; !important;
-    margin-bottom: 10px; !important;
+    margin-top: 8px;
+    margin-bottom: 10px;
 }
 .lead-article h4 a{
-    font-weight: bolder; !important;
-    color: black; !important;
+    font-weight: bolder;
+    color: black;
 }
 /* STOP PRE-FOOTER */
 
@@ -682,7 +740,7 @@ a, .article-headline{
     font-weight: lighter;
 }
 .footer-title h3 a{
-    color: #a9091f; !important;
+    color: #a9091f;
     font-size: 18px;
     font-weight: bold;
 }
@@ -690,7 +748,7 @@ a, .article-headline{
     text-decoration: underline;
     text-decoration-color: #a9091f;
     text-decoration-thickness: 1px;
-    color: #a9091f; !important;
+    color: #a9091f;
 }
 .footer-topic{
     text-align: center;
